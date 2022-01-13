@@ -1,5 +1,6 @@
 const Navbar = () => {
-  return <h1>Hello</h1>;
+  return;
+  <></>;
 };
 
 export default Navbar;
