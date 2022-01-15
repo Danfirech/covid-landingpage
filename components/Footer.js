@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import TempLogo from '../assets/images/covid logo.png';
 
 const Container = styled.div`
   height: 10%;
-  background-color: #96a480;
+  background-color: #023047;
   color: lightgray;
 `;
 
@@ -30,23 +31,18 @@ const ListItem = styled.li`
     font-size: 14px;
   }
 `;
-const Copyright = styled.span`
-  @media only screen and (max-width: 480px) {
-    font-size: 14px;
-  }
-`;
 
 const Footer = () => {
   return (
     <Container>
       <Wrapper>
+        LOGO HERE
         <List>
           <ListItem>Guide</ListItem>
           <ListItem>Support</ListItem>
           <ListItem>API</ListItem>
           <ListItem>Community</ListItem>
         </List>
-        <Copyright>NAScottDesign Ⓒ</Copyright>
       </Wrapper>
     </Container>
   );
