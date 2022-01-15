@@ -34,7 +34,22 @@ const BottomContainerBoxes = styled.div`
   height: 260px;
   width: 200px;
   background-color: white;
-  padding-top: 55px;
+`;
+
+const IconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 200px;
+  background-color: black;
+`;
+
+const IconCircle = styled.div`
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  border-radius: 50px;
 `;
 
 const About = () => {
@@ -48,7 +63,9 @@ const About = () => {
       </AboutContainerTop>
       <AboutContainerBottom>
         <BottomContainerBoxes>
-          <h2>Item 1</h2>
+          <IconContainer>
+            <IconCircle></IconCircle>
+          </IconContainer>
           <h3>Competitvely priced</h3>
           <h5>
             We have competitive pricing <br></br>
@@ -56,7 +73,9 @@ const About = () => {
           </h5>
         </BottomContainerBoxes>
         <BottomContainerBoxes>
-          <h2>Item 1</h2>
+          <IconContainer>
+            <IconCircle></IconCircle>
+          </IconContainer>
           <h3>Fast service</h3>
           <h5>
             We have competitive pricing <br></br>
@@ -64,7 +83,9 @@ const About = () => {
           </h5>
         </BottomContainerBoxes>
         <BottomContainerBoxes>
-          <h2>Item 1</h2>
+          <IconContainer>
+            <IconCircle></IconCircle>
+          </IconContainer>
           <h3>Same Day Results</h3>
           <h5>
             We have competitive pricing <br></br>
@@ -72,7 +93,9 @@ const About = () => {
           </h5>
         </BottomContainerBoxes>
         <BottomContainerBoxes>
-          <h2>Item 1</h2>
+          <IconContainer>
+            <IconCircle></IconCircle>
+          </IconContainer>
           <h3>Certified</h3>
           <h5>
             We have competitive pricing <br></br>
