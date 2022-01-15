@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <Container>
       <Wrapper>
-        <img src={TempLogo} />
+        LOGO HERE
         <List>
           <ListItem>Guide</ListItem>
           <ListItem>Support</ListItem>
