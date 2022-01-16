@@ -11,8 +11,8 @@ export default function Home() {
     <>
       <Navbar />
       <CallToAction />
-      <About />
       <TestOptions />
+      <About />
       <Reviews />
       <Footer />
       <Legal />

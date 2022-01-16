@@ -8,8 +8,6 @@ const CallToActionContainer = styled.div`
   height: 400px;
   width: 100vw;
   background-color: #219ebc;
- a
-  padding-top: 80px;
 `;
 
 const Button = styled.div`
@@ -26,8 +24,8 @@ const CallToAction = () => {
   return (
     <>
       <CallToActionContainer>
-        <h1 style={{ color: "#013047" }}>Need Testing?</h1>
-        <h3 style={{ color: "#013047" }}>
+        <h1 style={{ color: "#013047", fontSize: 80 }}>Need Testing?</h1>
+        <h3 style={{ color: "#013047", fontSize: 30 }}>
           Let our team walk you through <br></br>
           our test options!
         </h3>
