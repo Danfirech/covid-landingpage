@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const CallToActionContainer = styled.div`
-  height: 300px;
+  height: 400px;
   width: 100vw;
   background-color: pink;
   padding-left: 70px;

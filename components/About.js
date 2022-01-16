@@ -14,6 +14,8 @@ const AboutContainerTop = styled.div`
   width: 100vw;
   background-color: blue;
   padding-left: 1000px;
+  padding-top: 70px;
+  background-image: url(https://as2.ftcdn.net/v2/jpg/04/75/05/61/1000_F_475056100_hZthb2HwFa3qy9NY1nKgWLDEu7XH0gFS.jpg);
 `;
 
 const AboutContainerBottom = styled.div`
