@@ -25,7 +25,7 @@ const CallToAction = () => {
         <h1 style={{ color: "#013047" }}>Need Testing?</h1>
         <h3 style={{ color: "#013047" }}>
           Let our team walk you through <br></br>
-          our test options.
+          our test options!
         </h3>
         <Button>Get Started</Button>
       </CallToActionContainer>
