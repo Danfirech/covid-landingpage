@@ -65,16 +65,16 @@ const TestOptions = ({ price, type }) => {
   return (
     <CardContainer>
       <PriceContainer>
-        $<Price>{price}</Price> /month
+        $<Price>{price}</Price>
       </PriceContainer>
-      <Type>{type} Plan</Type>
+      <Type>{type}</Type>
       <List>
         <ListItem>200 Hand-Crafted Templates</ListItem>
         <ListItem>Exclusive Support</ListItem>
         <ListItem>50+ PreBuilt Websites</ListItem>
         <ListItem>Premium Plugins</ListItem> {''}
       </List>
-      <Button>Join Now</Button>
+      <Button>Book Now</Button>
     </CardContainer>
   );
 };

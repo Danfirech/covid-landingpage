@@ -5,12 +5,22 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import reviews from '../assets/data/reviews';
 
 const ReviewsStyles = styled.div`
-  height: 10%;
+  height: 100%;
   width: 100vw;
   overflow-x: hidden;
   padding: 10rem 0;
   text-align: center;
-  background-color: #ffb703;
+  background-color: white;
+
+  .header {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 3rem;
+    line-height: 1.3em;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
 
   .review__wrapper {
     position: relative;
@@ -21,7 +31,7 @@ const ReviewsStyles = styled.div`
     width: 100%;
     height: fit-content;
     padding: 3rem;
-    background-color: var(--deep-dark);
+    background-color: white;
     border-radius: 12px;
     margin-top: 5rem;
   }
@@ -52,7 +62,7 @@ const ReviewsStyles = styled.div`
     .prev {
       margin: 0 0.5rem;
       width: fit-content;
-      background-color: var(--deep-dark);
+      background-color: #8ecae6;
       padding: 0.5rem 2rem;
       border-radius: 8px;
       cursor: pointer;
@@ -104,19 +114,16 @@ const Reviews = () => {
   return (
     <ReviewsStyles>
       <div className="container">
-        <h1
-          subheading="see what our clients say about us"
-          heading="Testimonials"
-        ></h1>
-        <div className="testimonial__wrapper">
+        <h1 className="header">Reviews</h1>
+        <div className="review__wrapper">
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
-              <div className="testimonial__info">
-                <div className="testimonial__desc">
+              <div className="review__info">
+                <div className="review__desc">
                   <div>{activeSlide.desc}</div>
                 </div>
-                <h2 className="testimonial__name">{activeSlide.name}</h2>
-                <p className="testimonial__title">
+                <h2 className="review__name">{activeSlide.name}</h2>
+                <p className="review__title">
                   {activeSlide.title}, <br /> {activeSlide.org}
                 </p>
               </div>

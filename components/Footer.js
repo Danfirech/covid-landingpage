@@ -4,7 +4,7 @@ import TempLogo from '../assets/images/covid logo.png';
 
 const Container = styled.div`
   width: 100vw;
-  height: 10%;
+  height: 100%;
   background-color: #023047;
   color: lightgray;
 `;
