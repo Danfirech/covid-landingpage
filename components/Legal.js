@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  width: 100vw;
   height: 10%;
   background-color: #023047;
   color: lightgray;

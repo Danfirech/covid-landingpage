@@ -6,6 +6,7 @@ import reviews from '../assets/data/reviews';
 
 const ReviewsStyles = styled.div`
   height: 10%;
+  width: 100vw;
   overflow-x: hidden;
   padding: 10rem 0;
   text-align: center;
