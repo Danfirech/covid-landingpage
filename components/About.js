@@ -12,10 +12,9 @@ const AboutContainerTop = styled.div`
   flex-direction: column;
   height: 400px;
   width: 100vw;
-  background-color: blue;
+  background-color: #8ecae6;
   padding-left: 1000px;
   padding-top: 70px;
-  background-image: url(https://as2.ftcdn.net/v2/jpg/04/75/05/61/1000_F_475056100_hZthb2HwFa3qy9NY1nKgWLDEu7XH0gFS.jpg);
 `;
 
 const AboutContainerBottom = styled.div`
@@ -23,7 +22,7 @@ const AboutContainerBottom = styled.div`
   justify-content: space-between;
   height: 400px;
   width: 100vw;
-  background-color: green;
+  background-color: white;
   align-items: center;
   padding-left: 320px;
   padding-right: 320px;
@@ -44,13 +43,17 @@ const IconContainer = styled.div`
   align-items: center;
   height: 100px;
   width: 200px;
-  background-color: black;
+  background-color: white;
 `;
 
 const IconCircle = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 100px;
   width: 100px;
-  background-color: pink;
+  background-color: #8ecae6;
   border-radius: 50px;
 `;
 
@@ -66,10 +69,12 @@ const About = () => {
       <AboutContainerBottom>
         <BottomContainerBoxes>
           <IconContainer>
-            <IconCircle></IconCircle>
+            <IconCircle>
+              <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/55/000000/external-checkmark-chat-flatart-icons-outline-flatarticons.png" />
+            </IconCircle>
           </IconContainer>
-          <h3>Competitvely priced</h3>
-          <h5>
+          <h3 style={{ color: "#013047" }}>Competitvely priced</h3>
+          <h5 style={{ color: "#013047" }}>
             We have competitive pricing <br></br>
             that wont break the bank.
           </h5>
@@ -86,7 +91,9 @@ const About = () => {
         </BottomContainerBoxes>
         <BottomContainerBoxes>
           <IconContainer>
-            <IconCircle></IconCircle>
+            <IconCircle>
+              <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/55/000000/external-medical-health-medicine-flatart-icons-outline-flatarticons-4.png" />
+            </IconCircle>
           </IconContainer>
           <h3>Same Day Results</h3>
           <h5>
