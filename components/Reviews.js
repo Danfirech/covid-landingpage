@@ -1,30 +1,17 @@
 import React, { useState } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import reviews from '../assets/data/reviews';
-
-const Shape = css`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-`;
-
-const IntroShape = styled.div`
-  ${Shape}
-  clip-path: polygon(50% 0%, 100% 0, 100% 27%, 71% 32%, 30% 22%, 0 28%, 0 0);
-  background-color: #96a480;
-`;
 
 const ReviewsStyles = styled.div`
   height: 100%;
   width: 100vw;
   overflow-x: hidden;
-  padding: 10rem 0;
+
+  padding-top: 280px;
   text-align: center;
+  background-color: #219ebc;
 
   .header {
     max-width: 500px;
@@ -44,10 +31,10 @@ const ReviewsStyles = styled.div`
   .review__info {
     width: 100%;
     height: fit-content;
-    padding: 3rem;
-    background-color: white;
+    background-color: #219ebc;
     border-radius: 12px;
     margin-top: 5rem;
+    font-size: 1.6rem;
   }
   .review__desc {
     .para {
@@ -56,8 +43,8 @@ const ReviewsStyles = styled.div`
   }
   .review__name {
     margin-top: 4rem;
-    font-family: 'Montserrat Bold';
-    font-size: 2.2rem;
+
+    font-size: 1.5rem;
   }
   .review__title {
     font-size: 1.6rem;
@@ -76,7 +63,7 @@ const ReviewsStyles = styled.div`
     .prev {
       margin: 0 0.5rem;
       width: fit-content;
-      background-color: #8ecae6;
+      background-color: #023047;
       padding: 0.5rem 2rem;
       border-radius: 8px;
       cursor: pointer;
@@ -106,6 +93,34 @@ const ReviewsStyles = styled.div`
   }
 `;
 
+const BottomBorderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  width: 100vw;
+  padding-bottom: -100px;
+`;
+const BottomBorderContainer2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  width: 100vw;
+`;
+
+const BottomBorderLine = styled.div`
+  height: 2px;
+  width: 600px;
+  padding-bottom: -70px;
+  background-color: black;
+`;
+const BottomBorderLine2 = styled.div`
+  height: 2px;
+  width: 300px;
+  background-color: black;
+`;
+
 const Reviews = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeSlide = reviews[activeIndex];
@@ -129,6 +144,9 @@ const Reviews = () => {
     <ReviewsStyles>
       <div className="container">
         <h1 className="header">Reviews</h1>
+        <BottomBorderContainer>
+          <BottomBorderLine />
+        </BottomBorderContainer>
         <div className="review__wrapper">
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
@@ -144,7 +162,9 @@ const Reviews = () => {
             </CSSTransition>
           </SwitchTransition>
         </div>
-
+        <BottomBorderContainer2>
+          <BottomBorderLine2 />
+        </BottomBorderContainer2>
         <div className="arrows">
           <div
             className="prev"
@@ -153,7 +173,7 @@ const Reviews = () => {
             tabIndex={0}
             onKeyDown={handlePrev}
           >
-            <MdArrowBack />
+            <MdArrowBack style={{ color: 'white' }} />
           </div>
           <div
             className="next"
@@ -162,7 +182,7 @@ const Reviews = () => {
             tabIndex={0}
             onKeyDown={handleNext}
           >
-            <MdArrowForward />
+            <MdArrowForward style={{ color: 'white' }} />
           </div>
         </div>
       </div>

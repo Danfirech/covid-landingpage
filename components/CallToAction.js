@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const CallToActionContainer = styled.div`
   display: flex;
@@ -24,10 +24,18 @@ const CallToAction = () => {
   return (
     <>
       <CallToActionContainer>
-        <h1 style={{ color: "#013047", fontSize: 80 }}>Need Testing?</h1>
+        <h1
+          style={{
+            color: '#013047',
+            fontSize: 80,
+            fontFamily: 'Montserrat-Bold',
+          }}
+        >
+          Need a COVID-19 Test?
+        </h1>
         <h3
           style={{
-            color: "#013047",
+            color: '#013047',
             fontSize: 20,
             marginTop: -30,
             marginBottom: 50,
@@ -37,7 +45,9 @@ const CallToAction = () => {
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
         </h3>
-        <Button>Get Started</Button>
+        <Button style={{ fontFamily: 'Montserrat-Regular' }}>
+          Get Started
+        </Button>
       </CallToActionContainer>
     </>
   );
