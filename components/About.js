@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import covidTestPic from "../assets/images/covidTestPic.jpeg";
+
 const Aboutcontainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,8 +15,10 @@ const AboutContainerTop = styled.div`
   height: 400px;
   width: 100vw;
   background-color: #8ecae6;
-  padding-left: 1400px;
+  padding-left: 300px;
   padding-top: 40px;
+  background-size: cover;
+  background-image: url("https://t4.ftcdn.net/jpg/04/75/05/61/240_F_475056100_hZthb2HwFa3qy9NY1nKgWLDEu7XH0gFS.jpg");
 `;
 
 const AboutContainerBottom = styled.div`
@@ -50,7 +54,6 @@ const IconCircle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 100px;
   width: 100px;
   background-color: #8ecae6;
@@ -64,22 +67,22 @@ const About = () => {
         <h1>Testing Made Easy</h1>
         <h4>
           <img src="https://img.icons8.com/emoji/28/000000/check-mark-emoji.png" />
-          Checkmark 1
+          A licensed medical assistant will come to you.
         </h4>
         <h4>
           <img src="https://img.icons8.com/emoji/28/000000/check-mark-emoji.png" />
-          Checkmark 2
+          Our sign up process is simple.
         </h4>
         <h4>
           <img src="https://img.icons8.com/emoji/28/000000/check-mark-emoji.png" />
-          Checkmark 3
+          Certified travel documents.
         </h4>
       </AboutContainerTop>
       <AboutContainerBottom>
         <BottomContainerBoxes>
           <IconContainer>
             <IconCircle>
-              <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/55/000000/external-checkmark-chat-flatart-icons-outline-flatarticons.png" />
+              <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/55/000000/external-dollar-sign-commerce-dreamstale-lineal-dreamstale.png" />
             </IconCircle>
           </IconContainer>
           <h3 style={{ color: "#013047" }}>Competitvely priced</h3>
@@ -90,7 +93,9 @@ const About = () => {
         </BottomContainerBoxes>
         <BottomContainerBoxes>
           <IconContainer>
-            <IconCircle></IconCircle>
+            <IconCircle>
+              <img src="https://img.icons8.com/ios/55/000000/car--v1.png" />
+            </IconCircle>
           </IconContainer>
           <h3>Fast service</h3>
           <h5>
@@ -112,7 +117,9 @@ const About = () => {
         </BottomContainerBoxes>
         <BottomContainerBoxes>
           <IconContainer>
-            <IconCircle></IconCircle>
+            <IconCircle>
+              <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/55/000000/external-checkmark-chat-flatart-icons-outline-flatarticons.png" />
+            </IconCircle>
           </IconContainer>
           <h3>Certified</h3>
           <h5>
