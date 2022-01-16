@@ -23,8 +23,8 @@ const AboutContainerBottom = styled.div`
   width: 100vw;
   background-color: green;
   align-items: center;
-  padding-left: 240px;
-  padding-right: 240px;
+  padding-left: 320px;
+  padding-right: 320px;
 `;
 
 const BottomContainerBoxes = styled.div`
