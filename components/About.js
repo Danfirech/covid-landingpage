@@ -13,8 +13,8 @@ const AboutContainerTop = styled.div`
   height: 400px;
   width: 100vw;
   background-color: #8ecae6;
-  padding-left: 1000px;
-  padding-top: 70px;
+  padding-left: 1400px;
+  padding-top: 40px;
 `;
 
 const AboutContainerBottom = styled.div`
@@ -62,9 +62,18 @@ const About = () => {
     <Aboutcontainer>
       <AboutContainerTop>
         <h1>Testing Made Easy</h1>
-        <h4>Checkmark 1</h4>
-        <h4>Checkmark 2</h4>
-        <h4>Checkmark 2</h4>
+        <h4>
+          <img src="https://img.icons8.com/emoji/28/000000/check-mark-emoji.png" />
+          Checkmark 1
+        </h4>
+        <h4>
+          <img src="https://img.icons8.com/emoji/28/000000/check-mark-emoji.png" />
+          Checkmark 2
+        </h4>
+        <h4>
+          <img src="https://img.icons8.com/emoji/28/000000/check-mark-emoji.png" />
+          Checkmark 3
+        </h4>
       </AboutContainerTop>
       <AboutContainerBottom>
         <BottomContainerBoxes>
