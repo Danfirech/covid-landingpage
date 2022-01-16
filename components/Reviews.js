@@ -1,8 +1,23 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import reviews from '../assets/data/reviews';
+
+const Shape = css`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+`;
+
+const IntroShape = styled.div`
+  ${Shape}
+  clip-path: polygon(50% 0%, 100% 0, 100% 27%, 71% 32%, 30% 22%, 0 28%, 0 0);
+  background-color: #96a480;
+`;
 
 const ReviewsStyles = styled.div`
   height: 100%;
@@ -10,7 +25,6 @@ const ReviewsStyles = styled.div`
   overflow-x: hidden;
   padding: 10rem 0;
   text-align: center;
-  background-color: white;
 
   .header {
     max-width: 500px;
