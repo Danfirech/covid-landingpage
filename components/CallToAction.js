@@ -25,9 +25,17 @@ const CallToAction = () => {
     <>
       <CallToActionContainer>
         <h1 style={{ color: "#013047", fontSize: 80 }}>Need Testing?</h1>
-        <h3 style={{ color: "#013047", fontSize: 30 }}>
-          Let our team walk you through <br></br>
-          our test options!
+        <h3
+          style={{
+            color: "#013047",
+            fontSize: 20,
+            marginTop: -30,
+            marginBottom: 50,
+          }}
+        >
+          Let our team walk you through our test options! <br></br> A certified
+          medical assistant will come to you, <br></br> making the proceess
+          easy, fast, and comfortable.
         </h3>
         <Button>Get Started</Button>
       </CallToActionContainer>

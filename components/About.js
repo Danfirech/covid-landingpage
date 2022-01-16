@@ -32,6 +32,20 @@ const AboutContainerBottom = styled.div`
   padding-right: 320px;
 `;
 
+const BottomBorderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  width: 100vw;
+`;
+
+const BottomBorderLine = styled.div`
+  height: 2px;
+  width: 1150px;
+  background-color: blue;
+`;
+
 const BottomContainerBoxes = styled.div`
   display: flex;
   flex-direction: column;
@@ -128,6 +142,9 @@ const About = () => {
           </h5>
         </BottomContainerBoxes>
       </AboutContainerBottom>
+      <BottomBorderContainer>
+        <BottomBorderLine />
+      </BottomBorderContainer>
     </Aboutcontainer>
   );
 };
