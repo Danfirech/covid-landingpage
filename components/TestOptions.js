@@ -15,9 +15,9 @@ const Container = styled.div`
 const TestOptions = () => {
   return (
     <Container>
-      <TestOptionCard price="10" type="Basic" />
-      <TestOptionCard price="20" type="Premium" />
-      <TestOptionCard price="30" type="Advanced" />
+      <TestOptionCard price="149" type="Rapid Antigen" />
+      <TestOptionCard price="199" type="RT-PCR" />
+      <TestOptionCard price="349" type="Expedited RT-PCR" />
     </Container>
   );
 };
