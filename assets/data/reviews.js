@@ -1,4 +1,4 @@
-const testimonials = [
+const reviews = [
   {
     id: 1,
     name: 'Shaif Arfan',
@@ -21,4 +21,4 @@ const testimonials = [
     desc: 'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
   },
 ];
-export default testimonials;
+export default reviews;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import testimonials from '../assets/data/testimonials';
+import reviews from '../assets/data/reviews';
 
 const ReviewsStyles = styled.div`
   height: 10%;
@@ -83,10 +83,10 @@ const ReviewsStyles = styled.div`
 
 const Reviews = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const activeSlide = testimonials[activeIndex];
+  const activeSlide = reviews[activeIndex];
 
   function handleNext() {
-    if (activeIndex >= testimonials.length - 1) {
+    if (activeIndex >= reviews.length - 1) {
       setActiveIndex(0);
     } else {
       setActiveIndex((oldIndex) => oldIndex + 1);
@@ -94,7 +94,7 @@ const Reviews = () => {
   }
   function handlePrev() {
     if (activeIndex === 0) {
-      setActiveIndex(testimonials.length - 1);
+      setActiveIndex(reviews.length - 1);
     } else {
       setActiveIndex((oldIndex) => oldIndex - 1);
     }
