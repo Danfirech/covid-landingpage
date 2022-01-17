@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import CallToActionShape from "../assets/images/CallToActionShape.png";
+import Blob from "../assets/images/blob.png";
 import Image from "next/image";
 
 const CallToActionContainer = styled.div`
@@ -30,8 +31,16 @@ const CallToAction = (props) => {
           <Image
             src={CallToActionShape}
             alt="Picture of the author"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
+          />
+        </span>
+        <span className="blobShape">
+          <Image
+            src={Blob}
+            alt="Picture of the author"
+            width={250}
+            height={250}
           />
         </span>
         <h1

@@ -38,5 +38,13 @@ a {
 .orangeShape {
   position: absolute;
   left: 100px;
-  top: 50px;
+  top: 120px;
+  opacity: 0.8;
+}
+
+.blobShape {
+  position: absolute;
+  left: 1300px;
+  top: 100px;
+  opacity: 0.8;
 }

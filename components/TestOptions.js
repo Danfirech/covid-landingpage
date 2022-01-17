@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   height: 600px;
@@ -10,6 +10,18 @@ const Container = styled.div`
   @media only screen and (max-width: 480px) {
     flex-direction: column;
   }
+`;
+
+const LineContainer = styled.div`
+  display: flex;
+  height: 600;
+  width: 2px;
+`;
+
+const Line = styled.div`
+  height: 400px;
+  width: 0.5px;
+  background-color: black;
 `;
 
 const CardContainer = styled.div`
@@ -94,6 +106,9 @@ const TestOptions = ({ price, type }) => {
         </List>
         <Button>Book Now</Button>
       </CardContainer>
+      <LineContainer>
+        <Line />
+      </LineContainer>
       <CardContainer>
         <PriceContainer>
           <Price>$199</Price>
@@ -106,6 +121,9 @@ const TestOptions = ({ price, type }) => {
         </List>
         <Button>Book Now</Button>
       </CardContainer>
+      <LineContainer>
+        <Line />
+      </LineContainer>
       <CardContainer>
         <PriceContainer>
           <Price>$349</Price>
