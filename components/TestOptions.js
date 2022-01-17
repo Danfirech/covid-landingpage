@@ -27,13 +27,13 @@ const Line = styled.div`
 `;
 
 const CardContainer = styled.div`
-  margin-right: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media only screen and (max-width: 480px) {
     margin-right: 0;
     margin-bottom: 10px;
@@ -44,6 +44,8 @@ const CardContainer = styled.div`
 const PriceContainer = styled.div`
   display: flex;
   align-items: center;
+  padding-right: 130px;
+  padding-left: 130px;
 `;
 const Price = styled.span`
   font-weight: bold;
@@ -102,7 +104,7 @@ const TestOptions = ({ price, type }) => {
         </PriceContainer>
         <Type>Rapid Antigen</Type>
         <List>
-          <ListItem style={{ marginBottom: 104 }}>
+          <ListItem style={{ marginBottom: 106 }}>
             Results in 10 minutes
           </ListItem>
         </List>
