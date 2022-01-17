@@ -114,3 +114,8 @@
     flex-direction: column;
   }
 }
+
+.orangeShape {
+  position: relative;
+  padding-left: 100px;
+}

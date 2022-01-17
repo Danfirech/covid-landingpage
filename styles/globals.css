@@ -1,23 +1,23 @@
 @font-face {
-  font-family: 'RobotoMono Regular';
+  font-family: "RobotoMono Regular";
   src: url(../public/fonts/RobotoMono-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Glacial';
+  font-family: "Glacial";
   src: url(../public/fonts/GlacialIndifference-Regular.otf);
 }
 @font-face {
-  font-family: 'Montserrat-Light';
+  font-family: "Montserrat-Light";
   src: url(../public/fonts/Montserrat-ExtraLight.ttf);
 }
 @font-face {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   src: url(../public/fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Montserrat-Bold';
+  font-family: "Montserrat-Bold";
   src: url(../public/fonts/Montserrat-Medium.ttf);
 }
 
@@ -25,7 +25,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat-Light';
+  font-family: "Montserrat-Light";
 }
 a {
   color: inherit;
@@ -33,4 +33,10 @@ a {
 }
 * {
   box-sizing: border-box;
+}
+
+.orangeShape {
+  position: absolute;
+  left: 100px;
+  top: 50px;
 }

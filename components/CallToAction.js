@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import CallToActionShape from "../assets/images/CallToActionShape.png";
+import Image from "next/image";
 
 const CallToActionContainer = styled.div`
   display: flex;
@@ -20,32 +22,42 @@ const Button = styled.div`
   color: #01304;
 `;
 
-const CallToAction = () => {
+const CallToAction = (props) => {
   return (
     <>
       <CallToActionContainer>
+        <span className="orangeShape">
+          <Image
+            src={CallToActionShape}
+            alt="Picture of the author"
+            width={500}
+            height={500}
+          />
+        </span>
         <h1
           style={{
-            color: '#013047',
+            color: "#013047",
             fontSize: 80,
-            fontFamily: 'Montserrat-Bold',
+            fontFamily: "Montserrat-Bold",
+            zIndex: 1,
           }}
         >
           Need a COVID-19 Test?
         </h1>
         <h3
           style={{
-            color: '#013047',
+            color: "#013047",
             fontSize: 20,
             marginTop: -30,
             marginBottom: 50,
+            zIndex: 1,
           }}
         >
           Let our team walk you through our test options! <br></br> A certified
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
         </h3>
-        <Button style={{ fontFamily: 'Montserrat-Regular' }}>
+        <Button style={{ fontFamily: "Montserrat-Regular" }}>
           Get Started
         </Button>
       </CallToActionContainer>
