@@ -19,6 +19,8 @@ const LineContainer = styled.div`
 `;
 
 const Line = styled.div`
+  justify-content: center;
+  align-items: center;
   height: 400px;
   width: 0.5px;
   background-color: black;

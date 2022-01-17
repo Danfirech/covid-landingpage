@@ -1,14 +1,24 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { MdArrowForward, MdArrowBack } from 'react-icons/md';
-import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import reviews from '../assets/data/reviews';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { MdArrowForward, MdArrowBack } from "react-icons/md";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
+import reviews from "../assets/data/reviews";
+import Image from "next/image";
+import dotBlob from "../assets/images/dotBlob.png";
+import sideBlob from "../assets/images/sideBlob.png";
+
+const Container = styled.div`
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
 
 const ReviewsStyles = styled.div`
   height: 100%;
   width: 100vw;
   overflow-x: hidden;
-
   padding-top: 280px;
   text-align: center;
   background-color: #219ebc;
@@ -144,9 +154,9 @@ const Reviews = () => {
     <ReviewsStyles>
       <div className="container">
         <h1 className="header">Reviews</h1>
-        <BottomBorderContainer>
+        {/* <BottomBorderContainer>
           <BottomBorderLine />
-        </BottomBorderContainer>
+        </BottomBorderContainer> */}
         <div className="review__wrapper">
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
@@ -162,9 +172,9 @@ const Reviews = () => {
             </CSSTransition>
           </SwitchTransition>
         </div>
-        <BottomBorderContainer2>
+        {/* <BottomBorderContainer2>
           <BottomBorderLine2 />
-        </BottomBorderContainer2>
+        </BottomBorderContainer2> */}
         <div className="arrows">
           <div
             className="prev"
@@ -173,7 +183,7 @@ const Reviews = () => {
             tabIndex={0}
             onKeyDown={handlePrev}
           >
-            <MdArrowBack style={{ color: 'white' }} />
+            <MdArrowBack style={{ color: "white" }} />
           </div>
           <div
             className="next"
@@ -182,10 +192,16 @@ const Reviews = () => {
             tabIndex={0}
             onKeyDown={handleNext}
           >
-            <MdArrowForward style={{ color: 'white' }} />
+            <MdArrowForward style={{ color: "white" }} />
           </div>
         </div>
       </div>
+      <span className="sideBlob">
+        <Image src={sideBlob} alt="Picture of the author" />
+      </span>
+      <span className="dotBlob">
+        <Image src={dotBlob} alt="Picture of the author" />
+      </span>
     </ReviewsStyles>
   );
 };

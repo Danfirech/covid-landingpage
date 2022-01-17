@@ -48,3 +48,24 @@ a {
   top: 100px;
   opacity: 0.8;
 }
+
+.sideBlob {
+  position: absolute;
+  overflow: visible;
+  left: 1700px;
+  top: 200px;
+  opacity: 0.8;
+  width: 400px;
+  height: 400px;
+}
+
+.dotBlob {
+  position: absolute;
+  overflow: visible;
+  left: 30px;
+  top: 620px;
+  opacity: 0.8;
+  width: 600px;
+  height: 600px;
+  transform: rotate(-10deg);
+}
