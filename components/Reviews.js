@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { MdArrowForward, MdArrowBack } from "react-icons/md";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
-import reviews from "../assets/data/reviews";
-import Image from "next/image";
-import dotBlob from "../assets/images/dotBlob.png";
-import sideBlob from "../assets/images/sideBlob.png";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { MdArrowForward, MdArrowBack } from 'react-icons/md';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import reviews from '../assets/data/reviews';
+import Image from 'next/image';
+import dotBlob from '../assets/images/dotBlob.png';
+import sideBlob from '../assets/images/sideBlob.png';
 
 const Container = styled.div`
   height: 100%;
@@ -21,12 +21,12 @@ const ReviewsStyles = styled.div`
   overflow-x: hidden;
   padding-top: 280px;
   text-align: center;
-  background-color: #219ebc;
+  background-color: white;
 
   .header {
     max-width: 500px;
     margin: 0 auto;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.3em;
     @media only screen and (max-width: 768px) {
       font-size: 1.4rem;
@@ -35,16 +35,16 @@ const ReviewsStyles = styled.div`
 
   .review__wrapper {
     position: relative;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
   }
   .review__info {
     width: 100%;
-    height: fit-content;
+    height: 300px;
     background-color: #219ebc;
     border-radius: 12px;
     margin-top: 5rem;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .review__desc {
     .para {
@@ -54,10 +54,10 @@ const ReviewsStyles = styled.div`
   .review__name {
     margin-top: 4rem;
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .review__title {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin-top: 0.3rem;
   }
   .arrows {
@@ -103,34 +103,6 @@ const ReviewsStyles = styled.div`
   }
 `;
 
-const BottomBorderContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2px;
-  width: 100vw;
-  padding-bottom: -100px;
-`;
-const BottomBorderContainer2 = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2px;
-  width: 100vw;
-`;
-
-const BottomBorderLine = styled.div`
-  height: 2px;
-  width: 600px;
-  padding-bottom: -70px;
-  background-color: black;
-`;
-const BottomBorderLine2 = styled.div`
-  height: 2px;
-  width: 300px;
-  background-color: black;
-`;
-
 const Reviews = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeSlide = reviews[activeIndex];
@@ -154,46 +126,37 @@ const Reviews = () => {
     <ReviewsStyles>
       <div className="container">
         <h1 className="header">Reviews</h1>
-        {/* <BottomBorderContainer>
-          <BottomBorderLine />
-        </BottomBorderContainer> */}
         <div className="review__wrapper">
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="review__info">
+                <h2 className="review__name">{activeSlide.name}</h2>
                 <div className="review__desc">
                   <div>{activeSlide.desc}</div>
+                  <div className="arrows">
+                    <div
+                      className="prev"
+                      onClick={handlePrev}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={handlePrev}
+                    >
+                      <MdArrowBack style={{ color: 'white' }} />
+                    </div>
+                    <div
+                      className="next"
+                      onClick={handleNext}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={handleNext}
+                    >
+                      <MdArrowForward style={{ color: 'white' }} />
+                    </div>
+                  </div>
                 </div>
-                <h2 className="review__name">{activeSlide.name}</h2>
-                <p className="review__title">
-                  {activeSlide.title}, <br /> {activeSlide.org}
-                </p>
               </div>
             </CSSTransition>
           </SwitchTransition>
-        </div>
-        {/* <BottomBorderContainer2>
-          <BottomBorderLine2 />
-        </BottomBorderContainer2> */}
-        <div className="arrows">
-          <div
-            className="prev"
-            onClick={handlePrev}
-            role="button"
-            tabIndex={0}
-            onKeyDown={handlePrev}
-          >
-            <MdArrowBack style={{ color: "white" }} />
-          </div>
-          <div
-            className="next"
-            onClick={handleNext}
-            role="button"
-            tabIndex={0}
-            onKeyDown={handleNext}
-          >
-            <MdArrowForward style={{ color: "white" }} />
-          </div>
         </div>
       </div>
       <span className="sideBlob">
