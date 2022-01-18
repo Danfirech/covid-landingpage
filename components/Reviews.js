@@ -6,6 +6,7 @@ import reviews from '../assets/data/reviews';
 import Image from 'next/image';
 import dotBlob from '../assets/images/dotBlob.png';
 import sideBlob from '../assets/images/sideBlob.png';
+import reviewsBox from '../assets/images/reviewsbox (7).png';
 
 const Container = styled.div`
   height: 100%;
@@ -21,13 +22,13 @@ const ReviewsStyles = styled.div`
   overflow-x: hidden;
   padding-top: 280px;
   text-align: center;
-  background-color: white;
 
   .header {
     max-width: 500px;
     margin: 0 auto;
     font-size: 2rem;
     line-height: 1.3em;
+
     @media only screen and (max-width: 768px) {
       font-size: 1.4rem;
     }
@@ -41,10 +42,12 @@ const ReviewsStyles = styled.div`
   .review__info {
     width: 100%;
     height: 300px;
-    background-color: #219ebc;
     border-radius: 12px;
     margin-top: 5rem;
-    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
   }
   .review__desc {
     .para {
@@ -111,16 +114,6 @@ const IconContainer = styled.div`
   width: 200px;
 `;
 
-const IconCircle = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  width: 100px;
-  background-color: #8ecae6;
-  border-radius: 50px;
-`;
-
 const Reviews = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeSlide = reviews[activeIndex];
@@ -143,16 +136,14 @@ const Reviews = () => {
   return (
     <ReviewsStyles>
       <div className="container">
-        <h1 className="header">Reviews</h1>
         <div className="review__wrapper">
-          <IconContainer>
-            <IconCircle>
-              <img src="https://img.icons8.com/external-linector-lineal-linector/64/000000/external-medical-mask-virus-linector-lineal-linector.png" />{' '}
-            </IconCircle>
-          </IconContainer>
+          <span className="reviewBox">
+            <Image src={reviewsBox} alt="review box" />
+          </span>
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="review__info">
+                <h1 className="header">Reviews</h1>
                 <h2 className="review__name">{activeSlide.name}</h2>
                 <div className="review__desc">
                   <div>{activeSlide.desc}</div>
@@ -183,10 +174,10 @@ const Reviews = () => {
         </div>
       </div>
       <span className="sideBlob">
-        <Image src={sideBlob} alt="Picture of the author" />
+        <Image src={sideBlob} alt="side blob shape" />
       </span>
       <span className="dotBlob">
-        <Image src={dotBlob} alt="Picture of the author" />
+        <Image src={dotBlob} alt="dotted and blob shape" />
       </span>
     </ReviewsStyles>
   );
