@@ -140,7 +140,7 @@ export default function Home() {
       <About />
       <Container>
         {/* <IntroShape /> */}
-        <Reviews />
+        {/* <Reviews /> */}
       </Container>
       <Footer />
       <Legal />
