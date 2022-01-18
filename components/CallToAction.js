@@ -1,7 +1,8 @@
-import styled from "styled-components";
-import CallToActionShape from "../assets/images/CallToActionShape.png";
-import Blob from "../assets/images/blob.png";
-import Image from "next/image";
+import styled from 'styled-components';
+import CallToActionShape from '../assets/images/CallToActionShape.png';
+import Blob from '../assets/images/blob.png';
+import Image from 'next/image';
+import Home from '../assets/images/athometest.png';
 
 const CallToActionContainer = styled.div`
   display: flex;
@@ -10,7 +11,6 @@ const CallToActionContainer = styled.div`
   justify-content: center;
   height: 400px;
   width: 100vw;
-  background-color: #219ebc;
 `;
 
 const Button = styled.div`
@@ -18,7 +18,7 @@ const Button = styled.div`
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 130px;
+  width: 130px;q
   background-color: #ffb703;
   color: #01304;
 `;
@@ -27,7 +27,14 @@ const CallToAction = (props) => {
   return (
     <>
       <CallToActionContainer>
-        <span className="orangeShape">
+        <Image
+          className="home_img"
+          src={Home}
+          alt="pic"
+          objectFit="cover"
+          objectPosition="center"
+        />
+        {/* <span className="orangeShape">
           <Image
             src={CallToActionShape}
             alt="Picture of the author"
@@ -42,12 +49,12 @@ const CallToAction = (props) => {
             width={250}
             height={250}
           />
-        </span>
+        </span> */}
         <h1
           style={{
-            color: "#013047",
+            color: '#013047',
             fontSize: 80,
-            fontFamily: "Montserrat-Bold",
+            fontFamily: 'Montserrat-Bold',
             zIndex: 1,
           }}
         >
@@ -55,7 +62,7 @@ const CallToAction = (props) => {
         </h1>
         <h3
           style={{
-            color: "#013047",
+            color: '#013047',
             fontSize: 20,
             marginTop: -30,
             marginBottom: 50,
@@ -66,7 +73,7 @@ const CallToAction = (props) => {
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
         </h3>
-        <Button style={{ fontFamily: "Montserrat-Regular" }}>
+        <Button style={{ fontFamily: 'Montserrat-Regular' }}>
           Get Started
         </Button>
       </CallToActionContainer>
