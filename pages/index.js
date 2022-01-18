@@ -1,11 +1,11 @@
-import About from '../components/About';
-import CallToAction from '../components/CallToAction';
-import Footer from '../components/Footer';
-import Legal from '../components/Legal';
-import Navbar from '../components/Navbar';
-import Reviews from '../components/Reviews';
-import TestOptions from '../components/TestOptions';
-import styled, { css } from 'styled-components';
+import About from "../components/About";
+import CallToAction from "../components/CallToAction";
+import Footer from "../components/Footer";
+import Legal from "../components/Legal";
+import Navbar from "../components/Navbar";
+import Reviews from "../components/Reviews";
+import TestOptions from "../components/TestOptions";
+import styled, { css } from "styled-components";
 
 const Container = styled.div`
   height: 100vh;
@@ -139,8 +139,8 @@ export default function Home() {
       <TestOptions />
       <About />
       <Container>
-        {/* <IntroShape /> */}
-        <Reviews />
+        {/* <IntroShape />
+        <Reviews /> */}
       </Container>
       <Footer />
       <Legal />
