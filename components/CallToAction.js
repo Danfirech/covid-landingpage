@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import CallToActionShape from "../assets/images/CallToActionShape.png";
-import Blob from "../assets/images/blob.png";
-import Image from "next/image";
-import Home from "../assets/images/athometest2.png";
+import styled from 'styled-components';
+import CallToActionShape from '../assets/images/CallToActionShape.png';
+import Blob from '../assets/images/blob.png';
+import Image from 'next/image';
+import Home from '../assets/images/athometest2.png';
 
 const CallToActionContainer = styled.div`
   display: flex;
@@ -11,12 +11,12 @@ const CallToActionContainer = styled.div`
   width: 100vw;
 `;
 
-const Button = styled.div`
+const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 130px;
+  width: 100px;
   background-color: #ffb703;
   color: #01304;
   z-index: 1;
@@ -35,13 +35,13 @@ const CallToAction = (props) => {
         <Imag>
           <div
             style={{
-              position: "absolute",
+              position: 'absolute',
             }}
           >
             <Image
               className="home_img"
               src={Home}
-              objectFit={"cover"}
+              objectFit={'cover'}
               width={1920}
               height={650}
             />
@@ -66,30 +66,30 @@ const CallToAction = (props) => {
 
         <h1
           style={{
-            color: "#013047",
+            color: '#243338',
             fontSize: 80,
-            fontFamily: "Montserrat-Bold",
+            fontFamily: 'Montserrat-Bold',
             zIndex: 0,
             paddingLeft: 80,
             paddingTop: 90,
             marginBottom: -10,
           }}
         >
-          Need a COVID-19 Test?
+          Mobile COVID-19 Testing
         </h1>
         <h3
           style={{
-            color: "#013047",
+            color: '#013047',
             fontSize: 20,
             zIndex: 0,
-            paddingLeft: 80,
+            paddingLeft: 100,
           }}
         >
           Let our team walk you through our test options! <br></br> A certified
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
         </h3>
-        {/* <Button style={{ fontFamily: "Montserrat-Regular" }}>
+        {/* <Button style={{ fontFamily: 'Montserrat-Regular' }}>
           Get Started
         </Button> */}
       </CallToActionContainer>
