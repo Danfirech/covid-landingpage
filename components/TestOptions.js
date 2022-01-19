@@ -1,13 +1,14 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
-  height: 600px;
+  height: 800px;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 420px;
+
   @media only screen and (max-width: 480px) {
     flex-direction: column;
   }
