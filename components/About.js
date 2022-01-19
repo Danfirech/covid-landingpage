@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import covidTestPic from "../assets/images/covidTestPic.jpeg";
 import stockTester from "../assets/images/stockTester.png";
-import BlueStreak from "../assets/images/blueStreak.png";
+import Line from "../assets/images/Line.png";
 import Image from "next/image";
 
 const Aboutcontainer = styled.div`
@@ -103,13 +103,16 @@ const About = () => {
   return (
     <Aboutcontainer>
       <AboutContainerTop>
-        <div className="blueStreak">
-          <Image src={BlueStreak} alt="pic" layout="responsive" />
-        </div>
         <h1
-          style={{ color: "black", fontSize: 50, zIndex: 1, paddingLeft: 270 }}
+          style={{
+            color: "black",
+            fontSize: 50,
+            zIndex: 1,
+            paddingLeft: 430,
+            paddingTop: 50,
+          }}
         >
-          WE COME TO YOU.............
+          WE COME TO YOU
         </h1>
       </AboutContainerTop>
       <AboutContainerBottom>

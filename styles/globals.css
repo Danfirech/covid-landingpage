@@ -90,13 +90,14 @@ a {
   height: 400px;
 }
 
-.blueStreak {
+.line {
   position: absolute;
   overflow: visible;
-  left: 380px;
+  align-items: center;
+  left: 500px;
   top: 750px;
   opacity: 0.9;
   width: 900px;
-  height: 900px;
+  height: 1px;
   z-index: 1;
 }
