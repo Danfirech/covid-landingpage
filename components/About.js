@@ -7,9 +7,10 @@ import Image from 'next/image';
 const Aboutcontainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 800px;
+  height: 1000px;
   width: 100vw;
   padding-top: 200px;
+  background-color: #dfe5e5;
   @media (max-width: 376px) {
     flex-direction: column;
     height: 800px;
@@ -24,7 +25,7 @@ const AboutContainerTop = styled.div`
   justify-content: center;
   height: 100px;
   width: 100vw;
-  background-color: white;
+  background-color: #dfe5e5;
 `;
 
 const AboutContainerBottom = styled.div`
@@ -32,7 +33,7 @@ const AboutContainerBottom = styled.div`
   justify-content: space-between;
   height: 400px;
   width: 100vw;
-  background-color: white;
+  background-color: #dfe5e5;
   align-items: center;
   padding-left: 320px;
   padding-right: 320px;
@@ -49,27 +50,13 @@ const AboutContainerBottom = styled.div`
   }
 `;
 
-const BottomBorderContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2px;
-  width: 100vw;
-`;
-
-const BottomBorderLine = styled.div`
-  height: 2px;
-  width: 1150px;
-  background-color: black;
-`;
-
 const BottomContainerBoxes = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 260px;
   width: 300px;
-  background-color: white;
+  background-color: #dfe5e5;
   padding-top: 70px;
   @media (max-width: 376px) {
     flex-direction: column;
@@ -84,7 +71,7 @@ const IconContainer = styled.div`
   align-items: center;
   height: 100px;
   width: 200px;
-  background-color: ;
+  background-color: #dfe5e5;
   z-index: 1;
   padding-bottom: 80px;
 `;
