@@ -20,11 +20,11 @@ const Aboutcontainer = styled.div`
 const AboutContainerTop = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100px;
   width: 100vw;
   background-color: white;
-  padding-left: 300px;
-  padding-top: 60px;
 `;
 
 const AboutContainerBottom = styled.div`
@@ -68,7 +68,7 @@ const BottomContainerBoxes = styled.div`
   flex-direction: column;
   align-items: center;
   height: 260px;
-  width: 200px;
+  width: 300px;
   background-color: white;
   padding-top: 70px;
   @media (max-width: 376px) {
@@ -86,18 +86,17 @@ const IconContainer = styled.div`
   width: 200px;
   background-color: ;
   z-index: 1;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 80px;
 `;
 
 const IconCircle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   background-color: #8ecae6;
-  border-radius: 75px;
+  border-radius: 65px;
 `;
 
 const About = () => {
@@ -109,8 +108,7 @@ const About = () => {
             color: "black",
             fontSize: 50,
             zIndex: 1,
-            paddingLeft: 430,
-            paddingTop: 50,
+            marginBottom: -90,
           }}
         >
           WE COME TO YOU
@@ -127,8 +125,7 @@ const About = () => {
             style={{
               color: "#013047",
               fontFamily: "Montserrat-Bold",
-              paddingTop: 10,
-              paddingLeft: 35,
+              paddingTop: 13,
             }}
           >
             1. Book Apointment
@@ -148,7 +145,6 @@ const About = () => {
             style={{
               fontFamily: "Montserrat-Bold",
               paddingTop: 10,
-              paddingLeft: 45,
             }}
           >
             2. Get Tested at Home
@@ -168,7 +164,6 @@ const About = () => {
             style={{
               fontFamily: "Montserrat-Bold",
               paddingTop: 10,
-              paddingLeft: 45,
             }}
           >
             3. Get Results, Fast!

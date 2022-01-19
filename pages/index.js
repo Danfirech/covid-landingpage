@@ -3,7 +3,7 @@ import CallToAction from "../components/CallToAction";
 import Footer from "../components/Footer";
 import Legal from "../components/Legal";
 import Navbar from "../components/Navbar";
-import Reviews from "../components/Reviews";
+// import Reviews from "../components/Reviews";
 import TestOptions from "../components/TestOptions";
 import styled, { css } from "styled-components";
 
@@ -138,10 +138,7 @@ export default function Home() {
       <CallToAction />
       <TestOptions />
       <About />
-      <Container>
-        {/* <IntroShape /> */}
-        {/* <Reviews /> */}
-      </Container>
+
       <Footer />
       <Legal />
     </>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CallToActionShape from "../assets/images/CallToActionShape.png";
 import Blob from "../assets/images/blob.png";
 import Image from "next/image";
-import Home from "../assets/images/athometest.png";
+import Home from "../assets/images/athometest2.png";
 
 const CallToActionContainer = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ const CallToAction = (props) => {
               src={Home}
               objectFit={"cover"}
               width={1920}
-              height={1000}
+              height={650}
             />
           </div>
         </Imag>
@@ -70,6 +70,9 @@ const CallToAction = (props) => {
             fontSize: 80,
             fontFamily: "Montserrat-Bold",
             zIndex: 0,
+            paddingLeft: 80,
+            paddingTop: 90,
+            marginBottom: -10,
           }}
         >
           Need a COVID-19 Test?
@@ -78,18 +81,17 @@ const CallToAction = (props) => {
           style={{
             color: "#013047",
             fontSize: 20,
-            marginTop: -30,
-            marginBottom: 50,
             zIndex: 0,
+            paddingLeft: 80,
           }}
         >
           Let our team walk you through our test options! <br></br> A certified
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
         </h3>
-        <Button style={{ fontFamily: "Montserrat-Regular" }}>
+        {/* <Button style={{ fontFamily: "Montserrat-Regular" }}>
           Get Started
-        </Button>
+        </Button> */}
       </CallToActionContainer>
     </>
   );
