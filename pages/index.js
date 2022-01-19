@@ -139,8 +139,8 @@ export default function Home() {
       <TestOptions />
       <About />
       <Container>
-        {/* <IntroShape />
-        <Reviews /> */}
+        {/* <IntroShape /> */}
+        {/* <Reviews /> */}
       </Container>
       <Footer />
       <Legal />
