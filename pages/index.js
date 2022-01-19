@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 // import Reviews from "../components/Reviews";
 import TestOptions from "../components/TestOptions";
 import styled, { css } from "styled-components";
+import Questions from "../components/Questions";
 
 const Container = styled.div`
   height: 100vh;
@@ -138,7 +139,7 @@ export default function Home() {
       <CallToAction />
       <TestOptions />
       <About />
-
+      <Questions />
       <Footer />
       <Legal />
     </>
