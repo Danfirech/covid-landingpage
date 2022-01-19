@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const QuestionsPageContainer = styled.div`
-  height: 800px;
+  height: 1100px;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 80px;
 `;
 
 const QuestionsBox = styled.div`
@@ -13,7 +14,7 @@ const QuestionsBox = styled.div`
   width: 1200px;
   height: 100px;
   background-color: white;
-  padding-top: 30px;
+  margin-top: 40px;
   align-items: center;
   justify-content: center;
 `;
@@ -24,7 +25,7 @@ const Top = styled.div`
   height: 60px;
   width: 1200px;
   /* background-color: #fefefe; */
-  background-color: Pink;
+  background-color: #dfe5e5;
 `;
 
 const Bottom = styled.div`
@@ -33,8 +34,8 @@ const Bottom = styled.div`
   height: 60px;
   width: 1200px;
   /* background-color: #fefefe; */
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: gray;
 `;
 
 const Questions = () => {
@@ -49,6 +50,7 @@ const Questions = () => {
               style={{
                 paddingRight: 20,
                 paddingLeft: 15,
+                color: "#0c234b",
               }}
             >
               Q.
@@ -81,10 +83,211 @@ const Questions = () => {
               chose?
             </h4>
           </Bottom>
-          <QuestionsBox>
-            <Top></Top>
-            <Bottom></Bottom>
-          </QuestionsBox>
+        </QuestionsBox>
+        <QuestionsBox>
+          <Top>
+            <h1
+              className="boxBorderTop"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+                color: "#0c234b",
+              }}
+            >
+              Q.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please ask your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Top>
+          <Bottom>
+            <h1
+              className="boxBorderBottom"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+              }}
+            >
+              A.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please Answer your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Bottom>
+        </QuestionsBox>
+        <QuestionsBox>
+          <Top>
+            <h1
+              className="boxBorderTop"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+                color: "#0c234b",
+              }}
+            >
+              Q.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please ask your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Top>
+          <Bottom>
+            <h1
+              className="boxBorderBottom"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+              }}
+            >
+              A.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please Answer your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Bottom>
+        </QuestionsBox>
+        <QuestionsBox>
+          <Top>
+            <h1
+              className="boxBorderTop"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+                color: "#0c234b",
+              }}
+            >
+              Q.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please ask your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Top>
+          <Bottom>
+            <h1
+              className="boxBorderBottom"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+              }}
+            >
+              A.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please Answer your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Bottom>
+        </QuestionsBox>
+        <QuestionsBox>
+          <Top>
+            <h1
+              className="boxBorderTop"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+                color: "#0c234b",
+              }}
+            >
+              Q.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please ask your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Top>
+          <Bottom>
+            <h1
+              className="boxBorderBottom"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+              }}
+            >
+              A.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please Answer your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Bottom>
+        </QuestionsBox>
+        <QuestionsBox>
+          <Top>
+            <h1
+              className="boxBorderTop"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+                color: "#0c234b",
+              }}
+            >
+              Q.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please ask your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Top>
+          <Bottom>
+            <h1
+              className="boxBorderBottom"
+              style={{
+                paddingRight: 20,
+                paddingLeft: 15,
+              }}
+            >
+              A.
+            </h1>
+            <h4
+              style={{
+                paddingTop: 10,
+              }}
+            >
+              Please Answer your first question here. It may be any lenght you
+              chose?
+            </h4>
+          </Bottom>
         </QuestionsBox>
       </QuestionsPageContainer>
     </>

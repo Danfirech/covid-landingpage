@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
-  height: 800px;
+  height: 900px;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 420px;
+  padding-top: 400px;
 
   @media only screen and (max-width: 480px) {
     flex-direction: column;
@@ -16,14 +16,14 @@ const Container = styled.div`
 
 const LineContainer = styled.div`
   display: flex;
-  height: 600;
+  height: 700;
   width: 2px;
 `;
 
 const Line = styled.div`
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 500px;
   width: 0.5px;
   background-color: black;
 `;
@@ -51,7 +51,8 @@ const PriceContainer = styled.div`
 `;
 const Price = styled.span`
   font-weight: bold;
-  font-size: 50px;
+  font-size: 75px;
+  color: #0c234b;
   @media only screen and (max-width: 480px) {
     font-size: 30px;
   }
@@ -59,9 +60,10 @@ const Price = styled.span`
 const Type = styled.button`
   padding: 10px;
   margin: 10px 0;
-  width: 150px;
-  border: 1.5px solid #358e9d;
-  color: #358e9d;
+  width: 240px;
+  font-size: 25px;
+  border: 1.5px solid #1e5288;
+  color: #1e5288;
   background-color: white;
   border-radius: 20px;
 `;
@@ -76,7 +78,7 @@ const ListItem = styled.li`
   margin: 30px 0;
   margin-top: -10px;
   padding-right: 30px;
-
+  font-size: 25px;
   align-items: center;
   @media only screen and (max-width: 480px) {
     margin: 10px;
@@ -85,9 +87,10 @@ const ListItem = styled.li`
 `;
 const Button = styled.button`
   border: none;
-  background-color: #ffb703;
-  color: #013047;
-  font-size: 16px;
+  background-color: #0c234b;
+  color: white;
+  font-size: 25px;
+  font-family: "Montserrat-Bold";
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
@@ -106,7 +109,7 @@ const TestOptions = ({ price, type }) => {
         </PriceContainer>
         <Type>Rapid Antigen</Type>
         <List>
-          <ListItem style={{ marginBottom: 106 }}>
+          <ListItem style={{ marginBottom: 120 }}>
             Results in 10 minutes
           </ListItem>
         </List>

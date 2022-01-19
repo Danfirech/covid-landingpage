@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import covidTestPic from '../assets/images/covidTestPic.jpeg';
-import stockTester from '../assets/images/stockTester.png';
-import Line from '../assets/images/Line.png';
-import Image from 'next/image';
+import styled from "styled-components";
+import covidTestPic from "../assets/images/covidTestPic.jpeg";
+import stockTester from "../assets/images/stockTester.png";
+import Line from "../assets/images/Line.png";
+import Image from "next/image";
 
 const Aboutcontainer = styled.div`
   display: flex;
@@ -82,7 +82,7 @@ const IconCircle = styled.div`
   justify-content: center;
   height: 130px;
   width: 130px;
-  background-color: #8ecae6;
+  background-color: #1e5288;
   border-radius: 65px;
 `;
 
@@ -92,7 +92,7 @@ const About = () => {
       <AboutContainerTop>
         <h1
           style={{
-            color: 'black',
+            color: "black",
             fontSize: 50,
             zIndex: 1,
             marginBottom: -90,
@@ -110,14 +110,14 @@ const About = () => {
           </IconContainer>
           <h1
             style={{
-              color: '#013047',
-              fontFamily: 'Montserrat-Bold',
+              color: "#0c234b",
+              fontFamily: "Montserrat-Bold",
               paddingTop: 13,
             }}
           >
             1. Book Apointment
           </h1>
-          <h4 style={{ color: '#013047' }}>
+          <h4 style={{ color: "#013047" }}>
             Register online and choose your preferred time window (morning,
             afternoon, evening and night).
           </h4>
@@ -130,13 +130,14 @@ const About = () => {
           </IconContainer>
           <h1
             style={{
-              fontFamily: 'Montserrat-Bold',
+              fontFamily: "Montserrat-Bold",
               paddingTop: 10,
+              color: "#0c234b",
             }}
           >
             2. Get Tested at Home
           </h1>
-          <h4 style={{ color: '#013047' }}>
+          <h4 style={{ color: "#0c234b" }}>
             We dispatch a medical assistant to the location of your choice.
             Track our location in real time!
           </h4>
@@ -149,13 +150,14 @@ const About = () => {
           </IconContainer>
           <h1
             style={{
-              fontFamily: 'Montserrat-Bold',
+              fontFamily: "Montserrat-Bold",
               paddingTop: 10,
+              color: "#0c234b",
             }}
           >
             3. Get Results, Fast!
           </h1>
-          <h4 style={{ color: '#013047' }}>
+          <h4 style={{ color: "#0c234b" }}>
             Receive emailed results fast. RT – PCR results in 24 Hrs Rapid
             Antigen Results in 10 Min
           </h4>
