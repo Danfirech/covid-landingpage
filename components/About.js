@@ -9,6 +9,7 @@ const Aboutcontainer = styled.div`
   flex-direction: column;
   height: 800px;
   width: 100vw;
+  padding-top: 200px;
   @media (max-width: 376px) {
     flex-direction: column;
     height: 800px;

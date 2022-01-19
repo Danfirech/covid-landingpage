@@ -89,15 +89,3 @@ a {
   width: 400px;
   height: 400px;
 }
-
-.line {
-  position: absolute;
-  overflow: visible;
-  align-items: center;
-  left: 500px;
-  top: 750px;
-  opacity: 0.9;
-  width: 900px;
-  height: 1px;
-  z-index: 1;
-}
