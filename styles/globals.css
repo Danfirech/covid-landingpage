@@ -89,3 +89,15 @@ a {
   width: 400px;
   height: 400px;
 }
+
+/* QUESTIONS COMPONENT */
+
+.boxBorderTop {
+  border-left: 5px solid red;
+  line-height: 60px;
+}
+
+.boxBorderBottom {
+  border-left: 5px solid gray;
+  line-height: 60px;
+}
