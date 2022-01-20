@@ -27,8 +27,8 @@ const Navbar = () => {
         <Link href="/" passHref>
           <StyledLink>Home</StyledLink>
         </Link>
-        <Link href="/about" passHref>
-          <StyledLink>About</StyledLink>
+        <Link href="/corporate" passHref>
+          <StyledLink>Corporate / Event</StyledLink>
         </Link>
         <Link href="/contact" passHref>
           <StyledLink>Contact</StyledLink>

@@ -3,6 +3,9 @@ import covidTestPic from "../assets/images/covidTestPic.jpeg";
 import stockTester from "../assets/images/stockTester.png";
 import Line from "../assets/images/Line.png";
 import Image from "next/image";
+import IphoneIcon from "../assets/images/iphoneIcon.png";
+import HouseIcon from "../assets/images/HouseIcon.png";
+import MedicalHistoryIcon from "../assets/images/MedicalHistoryIcon.png";
 
 const Aboutcontainer = styled.div`
   display: flex;
@@ -105,7 +108,7 @@ const About = () => {
         <BottomContainerBoxes>
           <IconContainer>
             <IconCircle>
-              <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/85/000000/external-dollar-sign-commerce-dreamstale-lineal-dreamstale.png" />
+              <Image src={IphoneIcon} width="64" height="64" />
             </IconCircle>
           </IconContainer>
           <h1
@@ -125,7 +128,7 @@ const About = () => {
         <BottomContainerBoxes>
           <IconContainer>
             <IconCircle>
-              <img src="https://img.icons8.com/ios/85/000000/car--v1.png" />
+              <Image src={HouseIcon} width="64" height="64" />
             </IconCircle>
           </IconContainer>
           <h1
@@ -145,7 +148,7 @@ const About = () => {
         <BottomContainerBoxes>
           <IconContainer>
             <IconCircle>
-              <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/85/000000/external-medical-health-medicine-flatart-icons-outline-flatarticons-4.png" />
+              <Image src={MedicalHistoryIcon} width="64" height="64" />
             </IconCircle>
           </IconContainer>
           <h1
