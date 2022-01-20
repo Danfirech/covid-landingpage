@@ -105,11 +105,11 @@ const TestOptions = ({ price, type }) => {
     <Container>
       <CardContainer>
         <PriceContainer>
-          <Price>$149</Price>
+          <Price>$100</Price>
         </PriceContainer>
         <Type>Rapid Antigen</Type>
         <List>
-          <ListItem style={{ marginBottom: 120 }}>
+          <ListItem style={{ marginBottom: 132 }}>
             Results in 10 minutes
           </ListItem>
         </List>
@@ -120,7 +120,7 @@ const TestOptions = ({ price, type }) => {
       </LineContainer>
       <CardContainer>
         <PriceContainer>
-          <Price>$199</Price>
+          <Price>$149</Price>
         </PriceContainer>
         <Type>RT-PCR</Type>
         <List>
@@ -135,7 +135,7 @@ const TestOptions = ({ price, type }) => {
       </LineContainer>
       <CardContainer>
         <PriceContainer>
-          <Price>$349</Price>
+          <Price>$299</Price>
         </PriceContainer>
         <Type>Expedited RT-PCR</Type>
         <List>

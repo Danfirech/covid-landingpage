@@ -109,7 +109,7 @@ const TestOptions = ({ price, type }) => {
         </PriceContainer>
         <Type>Rapid Antigen</Type>
         <List>
-          <ListItem style={{ marginBottom: 120 }}>
+          <ListItem style={{ marginBottom: 132 }}>
             Results in 10 minutes
           </ListItem>
         </List>
