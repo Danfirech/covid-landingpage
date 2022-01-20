@@ -3,7 +3,7 @@ import covidTestPic from "../assets/images/covidTestPic.jpeg";
 import stockTester from "../assets/images/stockTester.png";
 import Line from "../assets/images/Line.png";
 import Image from "next/image";
-import IphoneIcon from "../assets/images/iphoneIcon.png";
+import IphoneIcon from "../assets/images/IphoneIcon.png";
 import HouseIcon from "../assets/images/HouseIcon.png";
 import MedicalHistoryIcon from "../assets/images/MedicalHistoryIcon.png";
 

@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import CallToActionShape from '../assets/images/CallToActionShape.png';
-import Blob from '../assets/images/blob.png';
-import Image from 'next/image';
-import Home from '../assets/images/athometest2.png';
+import styled from "styled-components";
+import CallToActionShape from "../assets/images/CallToActionShape.png";
+import Blob from "../assets/images/blob.png";
+import Image from "next/image";
+import Home from "../assets/images/athometest2.png";
 
 const CallToActionContainer = styled.div`
   display: flex;
@@ -11,15 +11,26 @@ const CallToActionContainer = styled.div`
   width: 100vw;
 `;
 
-const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 100px;
-  background-color: #ffb703;
-  color: #01304;
-  z-index: 1;
+const Button1 = styled.button`
+  height: 50px;
+  width: 120px;
+  background-color: #1d5288;
+  position: absolute;
+  color: white;
+  margin-top: 460px;
+  margin-left: 240px;
+  border-radius: 10px;
+`;
+
+const Button2 = styled.button`
+  height: 50px;
+  width: 120px;
+  background-color: #1d5288;
+  position: absolute;
+  color: white;
+  margin-top: 460px;
+  margin-left: 490px;
+  border-radius: 10px;
 `;
 
 const Imag = styled.div`
@@ -35,64 +46,48 @@ const CallToAction = (props) => {
         <Imag>
           <div
             style={{
-              position: 'absolute',
+              position: "absolute",
             }}
           >
             <Image
               className="home_img"
               src={Home}
-              objectFit={'cover'}
+              objectFit={"cover"}
               width={1920}
               height={650}
             />
           </div>
         </Imag>
-        {/* <span className="orangeShape">
-          <Image
-            src={CallToActionShape}
-            alt="Picture of the author"
-            width={400}
-            height={400}
-          />
-        </span>
-        <span className="blobShape">
-          <Image
-            src={Blob}
-            alt="Picture of the author"
-            width={250}
-            height={250}
-          />
-        </span> */}
 
         <h1
           style={{
-            color: '#243338',
+            color: "#243338",
             fontSize: 80,
-            fontFamily: 'Montserrat-Bold',
+            fontFamily: "Montserrat-Bold",
             zIndex: 0,
-            paddingLeft: 80,
+            paddingLeft: 180,
             paddingTop: 90,
             marginBottom: -10,
           }}
         >
-          Mobile COVID-19 Testing
+          Mobile COVID-19 <br></br> Testing
         </h1>
         <h3
           style={{
-            color: '#013047',
+            color: "#013047",
             fontSize: 20,
             zIndex: 0,
-            paddingLeft: 100,
+            paddingLeft: 185,
           }}
         >
           Let our team walk you through our test options! <br></br> A certified
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
         </h3>
-        {/* <Button style={{ fontFamily: 'Montserrat-Regular' }}>
-          Get Started
-        </Button> */}
+        <Button1>At Home</Button1>
+        <Button2>Group</Button2>
       </CallToActionContainer>
+      <div></div>
     </>
   );
 };
