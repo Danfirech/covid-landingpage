@@ -18,7 +18,7 @@ const Button1 = styled.button`
   position: absolute;
   color: white;
   margin-top: 460px;
-  margin-left: 240px;
+  margin-left: 220px;
   border-radius: 10px;
 `;
 
@@ -29,7 +29,7 @@ const Button2 = styled.button`
   position: absolute;
   color: white;
   margin-top: 460px;
-  margin-left: 490px;
+  margin-left: 470px;
   border-radius: 10px;
 `;
 
@@ -84,8 +84,8 @@ const CallToAction = (props) => {
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
         </h3>
-        <Button1>At Home</Button1>
-        <Button2>Group</Button2>
+        {/* <Button1>At Home</Button1>
+        <Button2>Group</Button2> */}
       </CallToActionContainer>
       <div></div>
     </>
