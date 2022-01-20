@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Link from "next/link";
+import styled from 'styled-components';
+import Link from 'next/link';
 
 const Nav = styled.nav`
   height: 80px;
@@ -30,7 +30,7 @@ const Navbar = () => {
         <Link href="/corporate" passHref>
           <StyledLink>Corporate / Event</StyledLink>
         </Link>
-        <Link href="/contact" passHref>
+        <Link href="/" passHref>
           <StyledLink>Contact</StyledLink>
         </Link>
       </div>

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   width: 100vw;
   height: 10%;
-  background-color: #dfe5e5;
+  background-color: white;
   color: #0c234b;
 `;
 
@@ -24,7 +24,7 @@ const Copyright = styled.span`
   }
 `;
 
-const Footer = () => {
+const FooterCorporate = () => {
   return (
     <Container>
       <Wrapper>
@@ -34,4 +34,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterCorporate;

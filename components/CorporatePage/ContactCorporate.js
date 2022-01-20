@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   height: 600px;
   width: 100vw;
-  background-color: #dfe5e5;
+  background-color: white;
 `;
 
 const Wrapper = styled.div`
@@ -138,7 +138,7 @@ const Icon = styled.img`
   }
 `;
 
-const Contact = () => {
+const ContactCorporate = () => {
   return (
     <Container>
       <Wrapper>
@@ -167,4 +167,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactCorporate;
