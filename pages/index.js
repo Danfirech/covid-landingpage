@@ -1,5 +1,6 @@
 import About from '../components/About';
 import CallToAction from '../components/CallToAction';
+import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Legal from '../components/Legal';
 import Navbar from '../components/Navbar';
@@ -264,6 +265,7 @@ export default function Home() {
         <BottomAboutShape />
       </Container>
       <Questions />
+      <Contact />
       <Footer />
       <Legal />
     </>
