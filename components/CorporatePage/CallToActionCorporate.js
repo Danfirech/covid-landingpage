@@ -34,7 +34,7 @@ const CallToAction = (props) => {
           <div
             style={{
               position: "absolute",
-              paddingLeft: 700,
+              paddingLeft: 900,
               paddingTop: 50,
             }}
           >
@@ -70,7 +70,7 @@ const CallToAction = (props) => {
             fontSize: 50,
             fontFamily: "Montserrat-Bold",
             zIndex: 0,
-            paddingLeft: 80,
+            paddingLeft: 180,
             paddingTop: 170,
             marginBottom: -10,
           }}
@@ -83,7 +83,7 @@ const CallToAction = (props) => {
             color: "#013047",
             fontSize: 20,
             zIndex: 0,
-            paddingLeft: 85,
+            paddingLeft: 185,
           }}
         >
           Let our team walk you through our test options! <br></br> A certified
