@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import TempLogo from '../assets/images/covid logo.png';
 
 const Container = styled.div`
   width: 100vw;
   height: 100%;
-  background-color: #dfe5e5;
+  background-color: white;
   color: #0c234b;
 `;
 
@@ -47,7 +46,7 @@ const ListItem = styled.li`
   }
 `;
 
-const Footer = () => {
+const FooterCorporate = () => {
   return (
     <Container>
       <Wrapper>
@@ -77,4 +76,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterCorporate;
