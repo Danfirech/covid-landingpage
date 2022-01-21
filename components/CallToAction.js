@@ -13,24 +13,26 @@ const CallToActionContainer = styled.div`
 
 const Button1 = styled.button`
   height: 50px;
-  width: 120px;
-  background-color: #1d5288;
+  width: 180px;
+  background-color: #0c234b;
   position: absolute;
   color: white;
-  margin-top: 460px;
-  margin-left: 220px;
+  margin-top: 440px;
+  margin-left: 200px;
   border-radius: 10px;
+  font-size: 17px;
 `;
 
 const Button2 = styled.button`
   height: 50px;
-  width: 120px;
-  background-color: #1d5288;
+  width: 180px;
+  background-color: #0c234b;
   position: absolute;
   color: white;
-  margin-top: 460px;
-  margin-left: 470px;
+  margin-top: 440px;
+  margin-left: 450px;
   border-radius: 10px;
+  font-size: 17px;
 `;
 
 const Imag = styled.div`
@@ -61,12 +63,12 @@ const CallToAction = (props) => {
 
         <h1
           style={{
-            color: "#243338",
+            color: "#0c234b",
             fontSize: 80,
             fontFamily: "Montserrat-Bold",
             zIndex: 0,
             paddingLeft: 180,
-            paddingTop: 90,
+            paddingTop: 60,
             marginBottom: -10,
           }}
         >
@@ -74,18 +76,19 @@ const CallToAction = (props) => {
         </h1>
         <h3
           style={{
-            color: "#013047",
+            color: "white",
             fontSize: 20,
             zIndex: 0,
-            paddingLeft: 185,
+            paddingLeft: 195,
+            paddingTop: 20,
           }}
         >
           Let our team walk you through our test options! <br></br> A certified
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
         </h3>
-        {/* <Button1>At Home</Button1>
-        <Button2>Group</Button2> */}
+        <Button1>Mobile Testing</Button1>
+        <Button2>Corporate Testing</Button2>
       </CallToActionContainer>
       <div></div>
     </>

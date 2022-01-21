@@ -34,7 +34,7 @@ const CallToAction = (props) => {
           <div
             style={{
               position: "absolute",
-              paddingLeft: 900,
+              paddingLeft: 150,
               paddingTop: 50,
             }}
           >
@@ -67,23 +67,23 @@ const CallToAction = (props) => {
         <h1
           style={{
             color: "#243338",
-            fontSize: 50,
+            fontSize: 36,
             fontFamily: "Montserrat-Bold",
             zIndex: 0,
-            paddingLeft: 180,
-            paddingTop: 170,
+            paddingLeft: 980,
+            paddingTop: 60,
+            paddingRight: 100,
             marginBottom: -10,
           }}
         >
-          Group and Corporate <br></br>
-          Testing
+          The most trusted COVID-19 testing solution for teams and businesses
         </h1>
         <h3
           style={{
             color: "#013047",
             fontSize: 20,
             zIndex: 0,
-            paddingLeft: 185,
+            paddingLeft: 985,
           }}
         >
           Let our team walk you through our test options! <br></br> A certified
