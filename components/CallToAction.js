@@ -12,6 +12,7 @@ const CallToActionContainer = styled.div`
 `;
 
 const Button1 = styled.button`
+  border: none;
   height: 50px;
   width: 180px;
   background-color: #0c234b;
@@ -21,9 +22,16 @@ const Button1 = styled.button`
   margin-left: 200px;
   border-radius: 10px;
   font-size: 17px;
+  font-family: "Montserrat-Bold";
+  cursor: pointer;
+  @media only screen and (max-width: 480px) {
+    font-size: 12px;
+    padding: 5px;
+  }
 `;
 
 const Button2 = styled.button`
+  border: none;
   height: 50px;
   width: 180px;
   background-color: #0c234b;
@@ -33,6 +41,12 @@ const Button2 = styled.button`
   margin-left: 450px;
   border-radius: 10px;
   font-size: 17px;
+  font-family: "Montserrat-Bold";
+  cursor: pointer;
+  @media only screen and (max-width: 480px) {
+    font-size: 12px;
+    padding: 5px;
+  }
 `;
 
 const Imag = styled.div`
