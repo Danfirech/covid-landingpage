@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Link from 'next/link';
+import styled from "styled-components";
+import Link from "next/link";
 
 const Nav = styled.nav`
   height: 80px;
@@ -8,7 +8,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #023047; ;
+  color: #023047; 
 `;
 
 const StyledLink = styled.a`

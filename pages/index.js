@@ -1,13 +1,14 @@
-import About from '../components/About';
-import CallToAction from '../components/CallToAction';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
-import Legal from '../components/Legal';
-import Navbar from '../components/Navbar';
+import About from "../components/About";
+import CallToAction from "../components/CallToAction";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Legal from "../components/Legal";
+import Navbar from "../components/Navbar";
 // import Reviews from "../components/Reviews";
-import TestOptions from '../components/TestOptions';
-import styled, { css } from 'styled-components';
-import Questions from '../components/Questions';
+import TestOptions from "../components/TestOptions";
+import styled, { css } from "styled-components";
+import Questions from "../components/Questions";
+import { StyleRoot } from "radium";
 
 const Container = styled.div`
   height: 100vh;
@@ -256,18 +257,20 @@ const BottomAboutShape = styled.div`
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <CallToAction />
-      <TestOptions />
-      <Container>
-        <AboutShape />
-        <About />
-        <BottomAboutShape />
-      </Container>
-      <Questions />
-      <Contact />
-      <Footer />
-      <Legal />
+      <StyleRoot>
+        <Navbar />
+        <CallToAction />
+        <TestOptions />
+        <Container>
+          <AboutShape />
+          <About />
+          <BottomAboutShape />
+        </Container>
+        <Questions />
+        <Contact />
+        <Footer />
+        <Legal />
+      </StyleRoot>
     </>
   );
 }
