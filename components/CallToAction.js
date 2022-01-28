@@ -22,19 +22,6 @@ const CallToActionContainer = styled.div`
       margin-top: -10px;
     }
   }
-  .subheader {
-    color: white;
-    font-size: 20px;
-    z-index: 99;
-    padding-left: 195px;
-    padding-top: 20px;
-    @media only screen and (max-width: 1068px) {
-      font-size: 18px;
-      padding-top: 0px;
-      color: #0c234b;
-      margin-top: 100px;
-    }
-  }
 `;
 
 const Button1 = styled.button`
