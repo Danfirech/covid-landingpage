@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import TempLogo from '../assets/images/covid logo.png';
+// import TempLogo from '../assets/images/covid logo.png';
 
 const Container = styled.div`
   width: 100vw;
@@ -15,6 +15,11 @@ const Wrapper = styled.div`
   justify-content: space-between;
   @media only screen and (max-width: 768px) {
     padding: 50px;
+  }
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+
+    padding-top: 80px;
   }
 `;
 
@@ -35,6 +40,10 @@ const ListItemTitle = styled.li`
     margin-right: 10px;
     font-size: 18px;
   }
+  @media only screen and (max-width: 480px) {
+    font-size: 15px;
+    padding-top: 10px;
+  }
 `;
 
 const ListItem = styled.li`
@@ -45,20 +54,23 @@ const ListItem = styled.li`
     margin-right: 10px;
     font-size: 14px;
   }
+  @media only screen and (max-width: 480px) {
+    font-size: 11px;
+    padding-bottom: 10px;
+  }
 `;
 
 const Footer = () => {
   return (
     <Container>
       <Wrapper>
-        LOGO HERE
         <List>
           <ListItemTitle>Contact</ListItemTitle>
           <ListItem>(123) 765-2678</ListItem>
           <ListItem>covidtesting@covid.com</ListItem>
         </List>
         <List>
-          <ListItemTitle>About CovidTesting</ListItemTitle>
+          <ListItemTitle>About</ListItemTitle>
           <ListItem>Doctors</ListItem>
           <ListItem>Careers</ListItem>
           <ListItem>Press</ListItem>
