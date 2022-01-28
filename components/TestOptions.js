@@ -9,8 +9,10 @@ const Container = styled.div`
   justify-content: center;
   padding-top: 400px;
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 460px) {
     flex-direction: column;
+    height: 1500px;
+    padding-top: 10px;
   }
 `;
 
@@ -26,6 +28,9 @@ const Line = styled.div`
   height: 500px;
   width: 0.5px;
   background-color: black;
+  @media only screen and (max-width: 460px) {
+    display: none;
+  }
 `;
 
 const CardContainer = styled.div`
@@ -35,6 +40,11 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    border-bottom: 4px dotted blue;
+    margin-top: 30px;
+    padding-top: 100px;
+  }
 
   @media only screen and (max-width: 480px) {
     margin-right: 0;
@@ -73,7 +83,15 @@ const List = styled.ul`
   flex-direction: column;
   justify-content: center;
   padding-top: 15px;
+
+  .marginbottom {
+    margin-bottom: 132px;
+    @media only screen and (max-width: 768px) {
+      z-index: 0;
+    }
+  }
 `;
+
 const ListItem = styled.li`
   margin: 30px 0;
   margin-top: -10px;
@@ -94,9 +112,10 @@ const Button = styled.button`
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
-  @media only screen and (max-width: 480px) {
-    font-size: 12px;
-    padding: 5px;
+  @media only screen and (max-width: 468px) {
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -109,9 +128,7 @@ const TestOptions = ({ price, type }) => {
         </PriceContainer>
         <Type>Rapid Antigen</Type>
         <List>
-          <ListItem style={{ marginBottom: 132 }}>
-            Results in 10 minutes
-          </ListItem>
+          <ListItem className="marginbottom">Results in 10 minutes</ListItem>
         </List>
         <Button>Book Now</Button>
       </CardContainer>

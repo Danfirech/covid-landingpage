@@ -32,8 +32,8 @@ const CallToActionContainer = styled.div`
       font-size: 18px;
       padding-top: 0px;
       color: #0c234b;
-      margin-top: 100px
-    
+      margin-top: 100px;
+    }
   }
 `;
 
@@ -52,10 +52,14 @@ const Button1 = styled.button`
   cursor: pointer;
   @media only screen and (max-width: 768px) {
     margin-left: 20px;
+    height: 30px;
+    width: 150px;
   }
   @media only screen and (max-width: 480px) {
     font-size: 12px;
     padding: 5px;
+    height: 30px;
+    width: 150px;
   }
 `;
 
@@ -73,11 +77,15 @@ const Button2 = styled.button`
   font-family: "Montserrat-Bold";
   cursor: pointer;
   @media only screen and (max-width: 768px) {
-    margin-left: 300px;
+    margin-left: 200px;
+    height: 30px;
+    width: 150px;
   }
   @media only screen and (max-width: 480px) {
     font-size: 12px;
     padding: 5px;
+    height: 30px;
+    width: 150px;
   }
 `;
 
