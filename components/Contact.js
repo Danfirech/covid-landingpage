@@ -74,16 +74,6 @@ const LeftForm = styled.div`
   }
 `;
 
-const RightForm = styled.div`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  @media only screen and (max-width: 480px) {
-    height: 50%;
-  }
-`;
-
 const Input = styled.input`
   width: 600px;
   padding: 16px;
@@ -91,6 +81,7 @@ const Input = styled.input`
   font-family: 'Montserrat-Bold';
   @media only screen and (max-width: 480px) {
     padding: 5px;
+    width: 400px;
   }
 `;
 
@@ -102,6 +93,7 @@ const TextArea = styled.input`
   @media only screen and (max-width: 480px) {
     padding: 5px;
     margin-top: 20px;
+    width: 400px;
   }
 `;
 
@@ -118,23 +110,6 @@ const Button = styled.button`
   @media only screen and (max-width: 480px) {
     padding: 5px;
     font-size: 14px;
-  }
-`;
-
-const AddressItem = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-  @media only screen and (max-width: 480px) {
-    margin-bottom: 20px;
-  }
-`;
-
-const Icon = styled.img`
-  width: 20px;
-  margin-right: 20px;
-  @media only screen and (max-width: 480px) {
-    width: 15px;
   }
 `;
 
