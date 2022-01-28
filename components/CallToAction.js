@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Image from 'next/image';
-import Home from '../assets/images/athometest2.png';
+import styled from "styled-components";
+import Image from "next/image";
+import Home from "../assets/images/athometest2.png";
 
 const CallToActionContainer = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const CallToActionContainer = styled.div`
   .header {
     color: #0c234b;
     font-size: 80px;
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
     z-index: 99;
     padding-left: 200px;
     padding-top: 60px;
@@ -19,8 +19,7 @@ const CallToActionContainer = styled.div`
       font-size: 35px;
       padding-left: 10px;
       padding-top: 0px;
-      padding-bottom: 180px;
-      height: 700px;
+      margin-top: -10px;
     }
   }
 `;
@@ -36,11 +35,18 @@ const Button1 = styled.button`
   margin-left: 200px;
   border-radius: 10px;
   font-size: 17px;
-  font-family: 'Montserrat-Bold';
+  font-family: "Montserrat-Bold";
   cursor: pointer;
+  @media only screen and (max-width: 768px) {
+    margin-left: 20px;
+    height: 30px;
+    width: 150px;
+  }
   @media only screen and (max-width: 480px) {
     font-size: 12px;
     padding: 5px;
+    height: 30px;
+    width: 150px;
   }
 `;
 
@@ -55,11 +61,18 @@ const Button2 = styled.button`
   margin-left: 450px;
   border-radius: 10px;
   font-size: 17px;
-  font-family: 'Montserrat-Bold';
+  font-family: "Montserrat-Bold";
   cursor: pointer;
+  @media only screen and (max-width: 768px) {
+    margin-left: 200px;
+    height: 30px;
+    width: 150px;
+  }
   @media only screen and (max-width: 480px) {
     font-size: 12px;
     padding: 5px;
+    height: 30px;
+    width: 150px;
   }
 `;
 
@@ -71,12 +84,12 @@ const Imag = styled.div`
 
 const CallToAction = (props) => {
   const style = {
-    '@media (max-width: 900px)': {
-      color: 'red',
+    "@media (max-width: 900px)": {
+      color: "red",
     },
 
-    '@media (max-width: 500px)': {
-      color: 'blue',
+    "@media (max-width: 500px)": {
+      color: "blue",
     },
   };
   return (
@@ -85,13 +98,13 @@ const CallToAction = (props) => {
         <Imag>
           <div
             style={{
-              position: 'absolute',
+              position: "absolute",
             }}
           >
             <Image
               className="home_img"
               src={Home}
-              objectFit={'cover'}
+              objectFit={"cover"}
               width={1920}
               height={650}
             />
