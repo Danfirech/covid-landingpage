@@ -13,8 +13,8 @@ const Wrapper = styled.div`
   padding: 120px;
   display: flex;
   justify-content: space-between;
-  @media only screen and (max-width: 480px) {
-    padding: 10px;
+  @media only screen and (max-width: 768px) {
+    padding: 50px;
   }
 `;
 
@@ -31,9 +31,9 @@ const ListItemTitle = styled.li`
   margin-right: 20px;
   padding-bottom: 10px;
   font-size: 20px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 18px;
   }
 `;
 
@@ -41,7 +41,7 @@ const ListItem = styled.li`
   margin-right: 150px;
   padding-bottom: 5px;
   font-size: 15px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     margin-right: 10px;
     font-size: 14px;
   }

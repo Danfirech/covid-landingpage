@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -24,31 +24,45 @@ const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     width: 100%;
-    margin-top: 20px;
+    padding-left: 100px;
+  }
+  @media only screen and (max-width: 480px) {
+    /* width: 100%; */
+    /* padding-left: 100px;
+     */
   }
 `;
 
 const Title = styled.h1`
   padding-right: 185px;
+  @media only screen and (max-width: 768px) {
+    margin: 2px;
+    font-size: 25px;
+  }
   @media only screen and (max-width: 480px) {
-    margin: 20px;
+    /* margin: 2px; */
+    font-size: 20px;
   }
 `;
 
 const Text = styled.span`
   font-size: 20px;
   margin-right: 100px;
+  @media only screen and (max-width: 768px) {
+    font-size: 15px;
+  }
   @media only screen and (max-width: 480px) {
-    font-size: 14px;
+    font-size: 10px;
   }
 `;
 
 const FormContainer = styled.div`
   width: 50%;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     width: 100%;
+    height: 50%;
   }
 `;
 
@@ -57,7 +71,7 @@ const Form = styled.form`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -68,9 +82,8 @@ const LeftForm = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-right: 20px;
-  @media only screen and (max-width: 480px) {
-    height: 50%;
-    margin-right: 0;
+  @media only screen and (max-width: 768px) {
+    height: 100%;
   }
 `;
 
@@ -79,8 +92,9 @@ const Input = styled.input`
   padding: 16px;
   margin-top: 35px;
   font-family: 'Montserrat-Bold';
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     padding: 5px;
+    margin-top: 35px;
     width: 400px;
   }
 `;
@@ -90,9 +104,9 @@ const TextArea = styled.input`
   padding: 40px;
   margin-top: 35px;
   font-family: 'Montserrat-Bold';
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     padding: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 400px;
   }
 `;
@@ -107,7 +121,7 @@ const Button = styled.button`
   border-radius: 10px;
   margin-top: 20px;
   cursor: pointer;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     padding: 5px;
     font-size: 14px;
   }
