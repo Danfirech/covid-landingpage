@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import CallToActionShape from "../assets/images/CallToActionShape.png";
-import Blob from "../assets/images/blob.png";
 import Image from "next/image";
 import Home from "../assets/images/athometest2.png";
 
@@ -17,10 +15,13 @@ const CallToActionContainer = styled.div`
     padding-left: 200px;
     padding-top: 60px;
     margin-bottom: -10px;
-    @media only screen and (max-width: 500px) {
-      color: pink;
+    @media only screen and (max-width: 768px) {
+      font-size: 35px;
+      padding-left: 10px;
+      padding-top: 0px;
+      padding-bottom: 180px;
+      height: 700px;
     }
-  }
 `;
 
 const Button1 = styled.button`
@@ -96,30 +97,11 @@ const CallToAction = (props) => {
           </div>
         </Imag>
 
-        <h1
-          className="header"
-          // style={{
-          //   color: "#0c234b",
-          //   fontSize: 80,
-          //   fontFamily: "Montserrat-Bold",
-          //   zIndex: 99,
-          //   paddingLeft: 180,
-          //   paddingTop: 60,
-          //   marginBottom: -10,
-          // }}
-        >
+        <h1 className="header">
           Mobile COVID-19 <br></br> Testing
         </h1>
 
-        <h3
-          style={{
-            color: "white",
-            fontSize: 20,
-            zIndex: 0,
-            paddingLeft: 195,
-            paddingTop: 20,
-          }}
-        >
+        <h3 className="subheader">
           Let our team walk you through our test options! <br></br> A certified
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
