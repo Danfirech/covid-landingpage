@@ -8,7 +8,6 @@ import Navbar from "../components/Navbar";
 import TestOptions from "../components/TestOptions";
 import styled, { css } from "styled-components";
 import Questions from "../components/Questions";
-import { StyleRoot } from "radium";
 
 const Container = styled.div`
   height: 100vh;
@@ -257,20 +256,18 @@ const BottomAboutShape = styled.div`
 export default function Home() {
   return (
     <>
-      <StyleRoot>
-        <Navbar />
-        <CallToAction />
-        <TestOptions />
-        <Container>
-          <AboutShape />
-          <About />
-          <BottomAboutShape />
-        </Container>
-        <Questions />
-        <Contact />
-        <Footer />
-        <Legal />
-      </StyleRoot>
+      <Navbar />
+      <CallToAction />
+      <TestOptions />
+      <Container>
+        <AboutShape />
+        <About />
+        <BottomAboutShape />
+      </Container>
+      <Questions />
+      <Contact />
+      <Footer />
+      <Legal />
     </>
   );
 }

@@ -3,15 +3,24 @@ import CallToActionShape from "../assets/images/CallToActionShape.png";
 import Blob from "../assets/images/blob.png";
 import Image from "next/image";
 import Home from "../assets/images/athometest2.png";
-import { StyleRoot } from "radium";
-import Radium from "radium";
-import styleRoot from "radium/lib/components/style-root";
 
 const CallToActionContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 400px;
   width: 100vw;
+  .header {
+    color: #0c234b;
+    font-size: 80px;
+    font-family: "Montserrat-Bold";
+    z-index: 99;
+    padding-left: 200px;
+    padding-top: 60px;
+    margin-bottom: -10px;
+    @media only screen and (max-width: 500px) {
+      color: pink;
+    }
+  }
 `;
 
 const Button1 = styled.button`
@@ -70,61 +79,58 @@ const CallToAction = (props) => {
   };
   return (
     <>
-      <styleRoot>
-        <CallToActionContainer>
-          <Imag>
-            <div
-              style={{
-                position: "absolute",
-              }}
-            >
-              <Image
-                className="home_img"
-                src={Home}
-                objectFit={"cover"}
-                width={1920}
-                height={650}
-              />
-            </div>
-          </Imag>
-
-          <h1 style={style}>DANO</h1>
-
-          <h1
+      <CallToActionContainer>
+        <Imag>
+          <div
             style={{
-              color: "#0c234b",
-              fontSize: 80,
-              fontFamily: "Montserrat-Bold",
-              zIndex: 99,
-              paddingLeft: 180,
-              paddingTop: 60,
-              marginBottom: -10,
+              position: "absolute",
             }}
           >
-            Mobile COVID-19 <br></br> Testing
-          </h1>
+            <Image
+              className="home_img"
+              src={Home}
+              objectFit={"cover"}
+              width={1920}
+              height={650}
+            />
+          </div>
+        </Imag>
 
-          <h3
-            style={{
-              color: "white",
-              fontSize: 20,
-              zIndex: 0,
-              paddingLeft: 195,
-              paddingTop: 20,
-            }}
-          >
-            Let our team walk you through our test options! <br></br> A
-            certified medical assistant will come to you, <br></br> making the
-            proceess easy, fast, and comfortable.
-          </h3>
+        <h1
+          className="header"
+          // style={{
+          //   color: "#0c234b",
+          //   fontSize: 80,
+          //   fontFamily: "Montserrat-Bold",
+          //   zIndex: 99,
+          //   paddingLeft: 180,
+          //   paddingTop: 60,
+          //   marginBottom: -10,
+          // }}
+        >
+          Mobile COVID-19 <br></br> Testing
+        </h1>
 
-          <Button1>Mobile Testing</Button1>
-          <Button2>Corporate Testing</Button2>
-        </CallToActionContainer>
-        <div></div>
-      </styleRoot>
+        <h3
+          style={{
+            color: "white",
+            fontSize: 20,
+            zIndex: 0,
+            paddingLeft: 195,
+            paddingTop: 20,
+          }}
+        >
+          Let our team walk you through our test options! <br></br> A certified
+          medical assistant will come to you, <br></br> making the proceess
+          easy, fast, and comfortable.
+        </h3>
+
+        <Button1>Mobile Testing</Button1>
+        <Button2>Corporate Testing</Button2>
+      </CallToActionContainer>
+      <div></div>
     </>
   );
 };
 
-export default Radium(CallToAction);
+export default CallToAction;
