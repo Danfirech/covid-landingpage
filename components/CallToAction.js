@@ -22,6 +22,20 @@ const CallToActionContainer = styled.div`
       margin-top: -10px;
     }
   }
+  .subheader {
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat-Bold";
+    z-index: 99;
+    padding-left: 200px;
+    padding-top: 20px;
+    @media only screen and (max-width: 1068px) {
+      color: #0c234b;
+      margin-top: 150px;
+      font-size: 18px;
+      padding-left: 20px;
+    }
+  }
 `;
 
 const Button1 = styled.button`
