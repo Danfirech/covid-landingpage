@@ -14,9 +14,9 @@ const Aboutcontainer = styled.div`
   width: 100vw;
   padding-top: 200px;
   background-color: #dfe5e5;
-  @media (max-width: 376px) {
+  @media (max-width: 768px) {
     flex-direction: column;
-    height: 800px;
+    height: 2000px;
     width: 100vw;
   }
 `;
@@ -41,11 +41,18 @@ const AboutContainerBottom = styled.div`
   padding-left: 320px;
   padding-right: 320px;
   padding-top: 50px;
-  @media (max-width: 376px) {
+
+  .h1bottom {
+    color: #0c234b;
+    font-family: "Montserrat-Bold";
+    padding-top: 13px;
+  }
+
+  @media (max-width: 768px) {
     flex-direction: column;
     padding-left: 0px;
     padding-right: 0px;
-    height: 400px;
+    height: 1400px;
     width: 100vw;
     padding-top: 50px;
     align-items: center;
@@ -93,16 +100,7 @@ const About = () => {
   return (
     <Aboutcontainer>
       <AboutContainerTop>
-        <h1
-          style={{
-            color: "black",
-            fontSize: 50,
-            zIndex: 1,
-            marginBottom: -90,
-          }}
-        >
-          WE COME TO YOU
-        </h1>
+        <h1 className="h1bottom">WE COME TO YOU</h1>
       </AboutContainerTop>
       <AboutContainerBottom>
         <BottomContainerBoxes>
@@ -111,15 +109,7 @@ const About = () => {
               <Image src={IphoneIcon} width="64" height="64" />
             </IconCircle>
           </IconContainer>
-          <h1
-            style={{
-              color: "#0c234b",
-              fontFamily: "Montserrat-Bold",
-              paddingTop: 13,
-            }}
-          >
-            1. Book Apointment
-          </h1>
+          <h1 className="h1bottom">1. Book Apointment</h1>
           <h4 style={{ color: "#013047" }}>
             Register online and choose your preferred time window (morning,
             afternoon, evening and night).
@@ -131,15 +121,7 @@ const About = () => {
               <Image src={HouseIcon} width="64" height="64" />
             </IconCircle>
           </IconContainer>
-          <h1
-            style={{
-              fontFamily: "Montserrat-Bold",
-              paddingTop: 10,
-              color: "#0c234b",
-            }}
-          >
-            2. Get Tested at Home
-          </h1>
+          <h1 className="h1bottom">2. Get Tested at Home</h1>
           <h4 style={{ color: "#0c234b" }}>
             We dispatch a medical assistant to the location of your choice.
             Track our location in real time!
@@ -151,15 +133,7 @@ const About = () => {
               <Image src={MedicalHistoryIcon} width="64" height="64" />
             </IconCircle>
           </IconContainer>
-          <h1
-            style={{
-              fontFamily: "Montserrat-Bold",
-              paddingTop: 10,
-              color: "#0c234b",
-            }}
-          >
-            3. Get Results, Fast!
-          </h1>
+          <h1 className="h1bottom">3. Get Results, Fast!</h1>
           <h4 style={{ color: "#0c234b" }}>
             Receive emailed results fast. RT – PCR results in 24 Hrs Rapid
             Antigen Results in 10 Min

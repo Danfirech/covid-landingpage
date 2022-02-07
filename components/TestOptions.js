@@ -9,10 +9,10 @@ const Container = styled.div`
   justify-content: center;
   padding-top: 400px;
 
-  @media only screen and (max-width: 460px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
     height: 1500px;
-    padding-top: 10px;
+    padding-top: 210px;
   }
 `;
 
@@ -28,7 +28,7 @@ const Line = styled.div`
   height: 500px;
   width: 0.5px;
   background-color: black;
-  @media only screen and (max-width: 460px) {
+  @media only screen and (max-width: 768px) {
     display: none;
   }
 `;
