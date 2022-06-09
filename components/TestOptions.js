@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
   height: 900px;
@@ -108,10 +108,13 @@ const Button = styled.button`
   background-color: #0c234b;
   color: white;
   font-size: 25px;
-  font-family: "Montserrat-Bold";
+  font-family: 'Montserrat-Bold';
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
+  :hover {
+    background-color: #24395d;
+  }
   @media only screen and (max-width: 468px) {
     font-size: 20px;
     padding: 15px;
