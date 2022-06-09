@@ -1,13 +1,14 @@
-import About from "../components/About";
-import CallToAction from "../components/CallToAction";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Legal from "../components/Legal";
-import Navbar from "../components/Navbar";
+import Head from 'next/head';
+import About from '../components/About';
+import CallToAction from '../components/CallToAction';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import Legal from '../components/Legal';
+import Navbar from '../components/Navbar';
 // import Reviews from "../components/Reviews";
-import TestOptions from "../components/TestOptions";
-import styled, { css } from "styled-components";
-import Questions from "../components/Questions";
+import TestOptions from '../components/TestOptions';
+import styled, { css } from 'styled-components';
+import Questions from '../components/Questions';
 
 const Container = styled.div`
   height: 100vh;
@@ -256,6 +257,11 @@ const BottomAboutShape = styled.div`
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>COVID-19 Testing</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <CallToAction />
       <TestOptions />

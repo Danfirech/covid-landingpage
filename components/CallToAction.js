@@ -1,6 +1,7 @@
-import styled from "styled-components";
-import Image from "next/image";
-import Home from "../assets/images/athometest2.png";
+import styled from 'styled-components';
+import Image from 'next/image';
+import Home from '../assets/images/athometest2.png';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const CallToActionContainer = styled.div`
   display: flex;
@@ -9,8 +10,8 @@ const CallToActionContainer = styled.div`
   width: 100vw;
   .header {
     color: #0c234b;
-    font-size: 80px;
-    font-family: "Montserrat-Bold";
+    font-size: 70px;
+    font-family: 'Montserrat-Bold';
     z-index: 99;
     padding-left: 200px;
     padding-top: 60px;
@@ -25,10 +26,10 @@ const CallToActionContainer = styled.div`
   .subheader {
     color: white;
     font-size: 20px;
-    font-family: "Montserrat-Bold";
+    font-family: 'Montserrat-Bold';
     z-index: 99;
     padding-left: 200px;
-    padding-top: 20px;
+    padding-top: 35px;
     @media only screen and (max-width: 1068px) {
       color: #0c234b;
       margin-top: 150px;
@@ -40,17 +41,20 @@ const CallToActionContainer = styled.div`
 
 const Button1 = styled.button`
   border: none;
-  height: 50px;
-  width: 180px;
+  height: 58px;
+  width: 185px;
   background-color: #0c234b;
   position: absolute;
   color: white;
-  margin-top: 440px;
+  margin-top: 420px;
   margin-left: 200px;
   border-radius: 10px;
   font-size: 17px;
-  font-family: "Montserrat-Bold";
+  font-family: 'Montserrat-Bold';
   cursor: pointer;
+  :hover {
+    background-color: #24395d;
+  }
   @media only screen and (max-width: 768px) {
     margin-left: 20px;
     height: 30px;
@@ -66,17 +70,20 @@ const Button1 = styled.button`
 
 const Button2 = styled.button`
   border: none;
-  height: 50px;
-  width: 180px;
+  height: 58px;
+  width: 185px;
   background-color: #0c234b;
   position: absolute;
   color: white;
-  margin-top: 440px;
+  margin-top: 420px;
   margin-left: 450px;
   border-radius: 10px;
   font-size: 17px;
-  font-family: "Montserrat-Bold";
+  font-family: 'Montserrat-Bold';
   cursor: pointer;
+  :hover {
+    background-color: #24395d;
+  }
   @media only screen and (max-width: 768px) {
     margin-left: 200px;
     height: 30px;
@@ -98,12 +105,12 @@ const Imag = styled.div`
 
 const CallToAction = (props) => {
   const style = {
-    "@media (max-width: 900px)": {
-      color: "red",
+    '@media (max-width: 900px)': {
+      color: 'red',
     },
 
-    "@media (max-width: 500px)": {
-      color: "blue",
+    '@media (max-width: 500px)': {
+      color: 'blue',
     },
   };
   return (
@@ -112,33 +119,29 @@ const CallToAction = (props) => {
         <Imag>
           <div
             style={{
-              position: "absolute",
+              position: 'absolute',
             }}
           >
             <Image
               className="home_img"
               src={Home}
-              objectFit={"cover"}
+              objectFit={'cover'}
               width={1920}
               height={650}
             />
           </div>
         </Imag>
-
-        <h1 className="header">
+        <div className="header">
           Mobile COVID-19 <br></br> Testing
-        </h1>
-
-        <h3 className="subheader">
+        </div>
+        <div className="subheader">
           Let our team walk you through our test options! <br></br> A certified
           medical assistant will come to you, <br></br> making the proceess
           easy, fast, and comfortable.
-        </h3>
-
+        </div>
         <Button1>Mobile Testing</Button1>
         <Button2>Corporate Testing</Button2>
       </CallToActionContainer>
-      <div></div>
     </>
   );
 };

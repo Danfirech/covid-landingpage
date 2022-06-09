@@ -1,14 +1,14 @@
-import styled from "styled-components";
-import Link from "next/link";
+import styled from 'styled-components';
+import Link from 'next/link';
 
 const Nav = styled.nav`
   height: 80px;
-  width: 100vw
+  width: 100vw;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #023047; 
+  color: #023047;
 `;
 
 const StyledLink = styled.a`
@@ -20,7 +20,7 @@ const Navbar = () => {
     <Nav>
       <div>
         <Link href="/" passHref>
-          <StyledLink>NXT</StyledLink>
+          <StyledLink>COVID-19 Logo</StyledLink>
         </Link>
       </div>
       <div>
