@@ -6,16 +6,19 @@ const QuestionsPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-top: 80px;
 `;
 
 const QuestionsBox = styled.div`
   background-color: black;
-  width: 1200px;
+  width: 100%;
   height: 100px;
   background-color: white;
   margin-top: 40px;
   align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 `;
 
@@ -23,7 +26,7 @@ const Top = styled.div`
   display: flex;
   align-items: center;
   height: 60px;
-  width: 1200px;
+  width: 80%;
   /* background-color: #fefefe; */
   background-color: #dfe5e5;
 `;
@@ -32,7 +35,7 @@ const Bottom = styled.div`
   display: flex;
   align-items: center;
   height: 60px;
-  width: 1200px;
+  width: 80%;
   /* background-color: #fefefe; */
   background-color: white;
   color: gray;
