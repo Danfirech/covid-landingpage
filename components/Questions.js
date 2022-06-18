@@ -2,12 +2,18 @@ import styled from "styled-components";
 
 const QuestionsPageContainer = styled.div`
   height: 1100px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 80px;
+
+  @media (max-width: 768px) {
+    .margin {
+      margin-left: 55px;
+    }
+  }
 `;
 
 const QuestionsBox = styled.div`
@@ -29,6 +35,10 @@ const Top = styled.div`
   width: 80%;
   /* background-color: #fefefe; */
   background-color: #dfe5e5;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 
 const Bottom = styled.div`
@@ -39,13 +49,19 @@ const Bottom = styled.div`
   /* background-color: #fefefe; */
   background-color: white;
   color: gray;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 
 const Questions = () => {
   return (
     <>
       <QuestionsPageContainer>
-        <h1>Frequently Asked Questions (FAQ)</h1>
+        <div className="margin">
+          <h1>Frequently Asked Questions (FAQ)</h1>
+        </div>
         <QuestionsBox>
           <Top>
             <h1
