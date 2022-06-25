@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   height: 900px;
@@ -41,7 +41,7 @@ const CardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   @media only screen and (max-width: 768px) {
-    border-bottom: 4px dotted blue;
+    border-bottom: 1px solid black;
     margin-top: 30px;
     padding-top: 100px;
   }
@@ -108,7 +108,7 @@ const Button = styled.button`
   background-color: #0c234b;
   color: white;
   font-size: 25px;
-  font-family: 'Montserrat-Bold';
+  font-family: "Montserrat-Bold";
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;

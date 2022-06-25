@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import Image from 'next/image';
-import Home from '../assets/images/athometest2.png';
-import ScrollAnimation from 'react-animate-on-scroll';
+import styled from "styled-components";
+import Image from "next/image";
+import Home from "../assets/images/athometest2.png";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const CallToActionContainer = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const CallToActionContainer = styled.div`
   .header {
     color: #0c234b;
     font-size: 70px;
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
     z-index: 99;
     padding-left: 200px;
     padding-top: 60px;
@@ -26,15 +26,17 @@ const CallToActionContainer = styled.div`
   .subheader {
     color: white;
     font-size: 20px;
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
     z-index: 99;
     padding-left: 200px;
     padding-top: 35px;
     @media only screen and (max-width: 1068px) {
       color: #0c234b;
-      margin-top: 150px;
+      margin-top: 100px;
       font-size: 18px;
-      padding-left: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 6px;
     }
   }
 `;
@@ -50,7 +52,7 @@ const Button1 = styled.button`
   margin-left: 200px;
   border-radius: 10px;
   font-size: 17px;
-  font-family: 'Montserrat-Bold';
+  font-family: "Montserrat-Bold";
   cursor: pointer;
   :hover {
     background-color: #24395d;
@@ -79,7 +81,7 @@ const Button2 = styled.button`
   margin-left: 450px;
   border-radius: 10px;
   font-size: 17px;
-  font-family: 'Montserrat-Bold';
+  font-family: "Montserrat-Bold";
   cursor: pointer;
   :hover {
     background-color: #24395d;
@@ -105,12 +107,12 @@ const Imag = styled.div`
 
 const CallToAction = (props) => {
   const style = {
-    '@media (max-width: 900px)': {
-      color: 'red',
+    "@media (max-width: 900px)": {
+      color: "red",
     },
 
-    '@media (max-width: 500px)': {
-      color: 'blue',
+    "@media (max-width: 500px)": {
+      color: "blue",
     },
   };
   return (
@@ -119,13 +121,13 @@ const CallToAction = (props) => {
         <Imag>
           <div
             style={{
-              position: 'absolute',
+              position: "absolute",
             }}
           >
             <Image
               className="home_img"
               src={Home}
-              objectFit={'cover'}
+              objectFit={"cover"}
               width={1920}
               height={650}
             />
